@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/**
+ * Created by Liujx on 2017-07-25 11:21:07
+ */
+
+/* iconfont */
+@import url("//at.alicdn.com/t/font_y2dmlkzxrdiy66r.css");
+
+p,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0; padding:0; word-break:break-all;word-wrap: break-word;}
+body {
+    font-family: 'Helvetica Neue', Helvetica, sans-serif;
+    line-height: 1.2;
+    max-width: 750px;
+    margin: 0 auto;
+    color: #333;
+    background-color: #efeff4;
+    -webkit-overflow-scrolling: touch;
+}
+img{border:none; vertical-align:top;}
+li{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+input,button,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}
+input,button,textarea,select{font:100% Tahoma,Helvetica,Arial,sans-serif;}
+table {border-collapse: collapse; border-spacing:0;}
+i {font-style:normal;}
+em{font-style:normal;}
+a:link,a:visited,a:hover,a:active{text-decoration:none; outline: none;}
+a,area { blr:expression(this.onFocus=this.blur()) } /* for IE */
+:focus { outline: none; } /* for Firefox */ 
+input[type="button"], input[type="submit"], input[type="reset"] {
+	-webkit-appearance: none;
+}
+
+.pp-content {
+	width: 100%;
+	padding: 0 0.5rem;
+}
+
+.margin-bottom-20 {
+	margin-bottom: 0.5rem;
+}
+
+/* reset */
+.mui-bar-tab {
+	background-color: #fff;
+	border-top: 1px solid #d9d9d9;
+}
+
+.mui-bar-nav {
+	box-shadow: none;
+	-webkit-box-shadow: none;
+}
+
+/* 车源列表 */
+.pp-cars-list {
+	width: 100%;
+	padding: 0.75rem 0;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.pp-cars-list:last-child {
+	border-bottom: none;
+}
+
+.pp-cars-list .pp-cars-item {
+	display: block;
+}
+
+.pp-cars-item .pp-cars-img {
+	float: left;
+	width: 6.25rem;
+	height: 4.8rem;
+}
+
+.pp-cars-item .pp-cars-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.pp-cars-item .pp-cars-info {
+	float: left;
+	width: 11.4rem;
+	height: 4.8rem;
+	padding-left: 0.75rem;
+	position: relative;
+	
+}
+
+.pp-cars-item .pp-cars-info .pp-cars-title {
+	line-height: 0.95rem;
+	font-size: 16px;
+	color: #333;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pp-cars-item .pp-cars-info .pp-cars-tag {
+	line-height: 0.8rem;
+	padding-top: 0.5rem;
+	font-size: 12px;
+	color: #666;
+}
+
+.pp-cars-tag .pp-cars-line {
+	line-height: 0.8rem;
+	color: #e7e7e7;
+	padding: 0 3px;
+}
+
+.pp-cars-tag span i {
+	font-size: 12px;
+}
+
+.pp-cars-item .pp-cars-info .pp-cars-bottom {
+	width: 10.4rem;
+	position: absolute;
+	bottom: -2px;
+	line-height: 0.95rem;
+}
+
+.pp-cars-bottom .pp-cars-price {
+	float: left;
+	font-size: 16px;
+	color: #f07e31;
+}
+
+.pp-cars-bottom .pp-cars-time {
+	float: right;
+	display: inline-block;
+	font-size: 12px;
+	color: #999;
+
+}
