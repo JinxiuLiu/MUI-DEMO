@@ -3,22 +3,6 @@
  * Created by Liujx on 2017-07-25 14:51:07
  */
 
-/* header-search */
-.pp-bar-search {
-	display: block;
-	position: relative;
-    z-index: 1;
-    -webkit-box-align: center;
-    height: 30px;
-    line-height: 31px;
-    margin: 7px 0;
-    background: rgba(255,255,255,.6);
-    color: #333;
-    border-radius: 14px;
-    text-indent: 15px;
-    font-size: 14px;
-}
-
 /* 热门品牌and热门机型 */
 .pp-hot-title {
 	height: 1.75rem;

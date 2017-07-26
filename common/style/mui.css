@@ -65,7 +65,6 @@ a:active,
 a:hover
 {
     outline: 0;
-    color: initial;
 }
 
 abbr[title]
@@ -298,10 +297,6 @@ a
     text-decoration: none;
 
     color: #3788e4;
-}
-a:active
-{
-    color: #333;
 }
 
 .mui-content

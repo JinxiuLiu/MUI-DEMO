@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/**
+ * Created by Liujx on 2017-07-26 21:46:37
+ */
+.mui-bar-nav {
+	background-color: #5098e6;
+}
+
+.mui-slider .mui-slider-group .mui-slider-item img {
+    height: 9.375rem;
+}
+
+.pp-cars-number {
+	position: absolute;
+    bottom: 0.5rem;
+    left: 0.5rem;
+}
+
+.pp-cars-number .pp-number-box {
+	font-size: 10px;
+	height: 0.8rem;
+    line-height: 0.9rem;
+    background: rgba(0, 0, 0, .3);
+    color: #fff;
+    display: block;
+    text-align: center;
+    padding: 0 0.25rem;
+    z-index: 999;
+    vertical-align: middle;
+}
+
+.pp-cars-imgnum {
+	position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+    color: #fff;
+    font-size: 12px;
+}
