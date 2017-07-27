@@ -74,3 +74,17 @@ input[type='number'] {
 .pp-login-bottom .pp-login-bottom-left a {
 	color: #333;
 }
+
+/* 注册 */
+.pp-input-box .pp-get-code {
+	display: block;
+    width: 76px;
+    line-height: 24px;
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+    margin-top: 7px;
+    border: 1px solid #e7e7e7;
+    font-size: 12px;
+	text-align: center;
+}
