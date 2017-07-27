@@ -5,7 +5,7 @@
 
 
 /* iconfont */
-@import url("//at.alicdn.com/t/font_c2lb0w3eb9zlg14i.css");
+@import url("//at.alicdn.com/t/font_rba81uax488bbj4i.css");
 
 /* reset */
 p,
@@ -47,7 +47,7 @@ body {
 	max-width: 750px;
 	margin: 0 auto;
 	color: #333;
-	background-color: #efeff4;
+	background-color: #f3f3f3;
 	-webkit-overflow-scrolling: touch;
 }
 
@@ -84,6 +84,22 @@ button,
 textarea,
 select {
 	font: 100% Tahoma, Helvetica, Arial, sans-serif;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #999; opacity:1; 
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #999; opacity:1;
+}
+
+input:-ms-input-placeholder{
+    color: #999; opacity:1;
+}
+
+input::-webkit-input-placeholder{
+    color: #999; opacity:1;
 }
 
 table {
