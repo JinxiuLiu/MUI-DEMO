@@ -10,6 +10,7 @@
     height: 9.375rem;
 }
 
+/* slider */
 .pp-cars-number {
 	position: absolute;
     bottom: 0.5rem;
@@ -35,4 +36,184 @@
     right: 0.5rem;
     color: #fff;
     font-size: 12px;
+}
+
+/* car-title */
+.pp-car-title {
+	padding: 0.5rem;
+	background-color: #fff;
+}
+
+.pp-car-title .title {
+	line-height: 1rem;
+	font-size: 16px;
+	font-weight: 700;
+	color: #333;
+}
+
+.pp-car-title .pp-title-info {
+	line-height: 1.5rem;
+	font-size: 12px;
+	color: #999;
+}
+
+.pp-car-title .pp-title-info span {
+	float: left;
+	display: block;
+	width: 33.33%;
+}
+
+.pp-car-title .pp-title-info .one {
+	text-align: left;
+}
+
+.pp-car-title .pp-title-info .two {
+	text-align: center;
+}
+
+.pp-car-title .pp-title-info .three {
+	text-align: right;
+}
+
+.pp-car-title .pp-title-price {
+	font-size: 18px;
+	font-weight: 700;
+	color: #5098e6;
+}
+
+.pp-car-title .pp-title-price em {
+	font-size: 12px;
+}
+
+/* 基本信息 */
+.pp-car-basic,
+.pp-car-describe {
+	background-color: #fff;
+}
+
+.pp-car-basic .pp-basic-title,
+.pp-car-describe .pp-describe-title {
+	padding: 0 1rem;
+	line-height: 2rem;
+	font-size: 14px;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.pp-car-basic .pp-basic-title .line,
+.pp-car-describe .pp-describe-title .line{
+	display: inline-block;
+	height: 14px;
+	width: 2px;
+	margin-right: 5px;
+	margin-bottom: -2px;
+	background-color: #5098e6;
+}
+
+.pp-car-basic .pp-basic-info {
+	padding: 0.3rem 1rem;
+}
+
+.pp-car-basic .pp-basic-info .pp-basic-info-left,
+.pp-car-basic .pp-basic-info .pp-basic-info-right {
+	max-width: 48%;
+}
+
+.pp-car-basic .pp-basic-info li {
+	width: 100%;
+	line-height: 1.25rem;
+	font-size: 14px;
+	color: #999;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.pp-car-basic .pp-basic-info li span:last-child {
+	color: #333;
+	font-weight: 500;
+}
+
+/* 设备描述 */
+.pp-car-describe .pp-describe-title {
+	border-bottom: none;
+}
+
+.pp-car-describe .pp-describe-info {
+	line-height: 20px;
+	margin: 0 1rem;
+	padding: 0.5rem;
+	font-size: 14px;
+	background-color: #f7f7f7;
+}
+
+.pp-car-describe .pp-describe-report {
+	padding: 0.85rem 0;
+}
+
+.pp-car-describe .pp-describe-report .report-btn {
+	display: block;
+    width: 160px;
+    line-height: 1.5rem;
+    margin: 0 auto;
+    border: 1px solid #5098e6;
+    color: #5098e6;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* footer */
+.mui-bar-tab {
+	border-top: none;
+}
+
+.pp-car-footer-share,
+.pp-car-footer-collect {
+	display: block;
+	float: left;
+	width: 19.33%;
+	height: 49px;
+	color: #666;
+	text-align: center;
+	border-top: 1px solid #d9d9d9;
+}
+
+.pp-car-footer-share i,
+.pp-car-footer-collect i {
+	position: relative;
+	top: 5px;
+    width: 24px;
+    height: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 20px;
+}
+
+.pp-car-footer-share span,
+.pp-car-footer-collect span {
+	font-size: 12px;
+    padding-top: 7px;
+    display: block;
+}
+
+.pp-car-footer-collect:before {
+	display: block;
+    content: '';
+    height: 50px;
+    position: absolute;
+    border-left: 1px solid #d9d9d9;
+}
+
+.pp-car-footer-contact,
+.pp-car-footer-bid {
+	display: block;
+	float: left;
+	width: 30.66%;
+	line-height: 50px;
+	background: #a4d2ff;
+	text-align: center;
+	color: #fff;
+}
+
+.pp-car-footer-bid {
+	background: #5098e6;
 }
