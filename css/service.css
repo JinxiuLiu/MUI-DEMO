@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/**
+ * Created by Liujx on 2017-07-29 15:07:56
+ */
+.mui-bar-nav {
+	background-color: #5098e6;
+}
+
+.pp-service-item {
+	padding: 1rem;
+}
+
+.pp-service-title {
+	line-height: 40px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #5098e6;
+	text-align: center;
+}
+
+.pp-service-subhead {
+	padding: .5rem 0;
+	font-weight: 700;
+	font-size: 14px;
+	text-align: left;
+}
+
+.pp-service-item p {
+	line-height: 20px;
+	color: #333;
+}
