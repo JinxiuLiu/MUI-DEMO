@@ -1,0 +1,203 @@
+@charset "UTF-8";
+/**
+ * Created by Liujx on 2017-07-29 16:41:22
+ */
+.mui-bar-nav {
+	background-color: #5098e6;
+}
+
+/* 公共title */
+.pp-release-title {
+	padding: 0 1rem;
+    line-height: 2rem;
+    font-size: 14px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.pp-release-title .line {
+	display: inline-block;
+    height: 14px;
+    width: 2px;
+    margin-right: 5px;
+    margin-bottom: -2px;
+    background-color: #5098e6;
+}
+
+.pp-release-item {
+    padding: 0 1rem;
+}
+
+/* 设备图片 */
+.pp-facility-img {
+	background: #fff;
+}
+
+.pp-facility-img .pp-img-desc {
+	padding-top: 0.75rem;
+	line-height: 18px;
+	font-size: 12px;
+}
+
+.pp-facility-img .pp-img-upload {
+	padding-top: 0.75rem;
+	padding-bottom: 0.125rem;
+	position: relative;
+}
+
+.pp-facility-img .pp-img-upload .pp-show-img {
+	float: left;
+	width: 22.5%;
+	height: 22.5%;
+	margin-bottom: 3.33%;
+	margin-right: 3.33%;
+}
+
+.pp-facility-img .pp-img-upload .pp-show-img:nth-child(4n) {
+	margin-right: 0;
+}
+
+.pp-facility-img .pp-img-upload .pp-show-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.pp-facility-img .pp-img-upload .pp-show-img .pp-del-img {
+	position: absolute;
+	top: 6px;
+    right: -10px;
+	width: 20px;
+	height: 20px;
+	background: url(../images/del-img.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+/* 基本信息 */
+.pp-basic-info {
+	background: #fff;
+}
+
+.pp-basic-info .pp-select-box {
+	display: block;
+	line-height: 2.2rem;
+	padding: 0 1rem;
+	font-size: 14px;
+	color: #333;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.pp-basic-info .border-none {
+	border-bottom: none;
+}
+
+.pp-basic-info .pp-select-box .pp-select-right {
+	float: right;
+	color: #999;
+	font-size: 12px;
+}
+
+.pp-basic-info .pp-select-box .pp-select-right input {
+	display: inline-block;
+	float: right;
+	width: 80%;
+	height: 2.2rem;
+	line-height: 2.2rem;
+	padding: 0;
+	margin-bottom: 0;
+	border: 0;
+	text-align: right;
+	color: #5098e6;
+}
+
+.pp-basic-info .pp-select-box .pp-select-right .unit {
+	float: right;
+	text-align: right;
+	padding-left: 5px;
+}
+
+.pp-basic-info .pp-select-box .pp-select-right i {
+	font-size: 14px;
+}
+
+.pp-basic-info .pp-release-tip {
+	line-height: 16px;
+	padding: 5px 1rem;
+	font-size: 10px;
+	background: #f3f3f3;
+	color: #999;
+}
+
+.pp-basic-info .pp-select-tag {
+	padding: 0.75rem 1rem;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.pp-basic-info .pp-select-tag .pp-tag-item {
+	display: inline-block;
+	width: 60px;
+	height: 24px;
+	line-height: 25px;
+	background: #f7f7f7;
+	font-size: 12px;
+	text-align: center;
+	margin-right: 0.75rem;
+}
+
+.pp-basic-info .pp-select-tag .pp-tag-item.active {
+	background: #3998ED;
+	color: #fff;
+}
+
+/* 车主描述 */
+.pp-owner-desc  {
+	background: #fff;
+	padding-bottom: 0.75rem;
+}
+
+.pp-owner-desc .pp-release-title {
+	border-bottom: none;
+}
+
+.pp-owner-desc .pp-desc-info {
+	line-height: 20px;
+	padding: .5rem;
+	font-size: 12px;
+	background-color: #f7f7f7;
+}
+
+/* 联系方式 */
+.pp-contact-info {
+    background: #fff;
+}
+
+.pp-contact-info .pp-contact-box {
+	padding: 0 1rem;
+	line-height: 2.2rem;
+}
+
+.pp-contact-info .pp-contact-box span {
+	float: left;
+	width: 25%;
+	font-size: 14px;
+}
+
+.pp-contact-info .pp-contact-box input {
+	float: right;
+	width: 75%;
+	padding: 0;
+	margin-bottom: 0;
+	font-size: 12px;
+	border: none;
+	text-align: right;
+}
+
+/* 发布按钮 */
+.pp-release-btn .mui-btn {
+	width: 100%;
+	line-height: 2.2rem;
+	padding: 0;
+	border: 0;
+	border-radius: inherit;
+	font-size: 18px;
+	background: #3998ED;
+	color: #fff;
+}

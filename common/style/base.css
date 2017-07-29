@@ -5,7 +5,7 @@
 
 
 /* iconfont */
-@import url("//at.alicdn.com/t/font_ln9ia7t24typhkt9.css");
+@import url("//at.alicdn.com/t/font_1lvwfllypz0py14i.css");
 
 /* reset */
 p,
@@ -161,6 +161,10 @@ input[type="reset"] {
 	margin-bottom: 0.5rem;
 }
 
+.border-bottom-1 {
+	border-bottom: 1px solid #e7e7e7;
+}
+
 /* header-search */
 .pp-bar-search {
 	display: block;
@@ -175,6 +179,82 @@ input[type="reset"] {
 	color: #333;
 	border-radius: 14px;
 	font-size: 14px;
+}
+
+/* 底部发布车源 */
+/* 发布弹层 */
+.pp-publish-mark {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 68%;
+	background: rgba(0,0,0,0);
+	z-index: 1;
+}
+
+.pp-publish {
+	display: block;
+	width: 100%;
+	height: 8.725rem;
+	background-color: rgba(0, 0, 0, .7);
+	position: fixed;
+	bottom: 0;
+	z-index: 99;
+}
+
+.pp-publish:before {
+	display: block;
+	content: '';
+	width: 100%;
+	height: 2rem;
+	background-color: rgba(0, 0, 0, .7);
+	border-radius: 50% 50% 0 0;
+	position: absolute;
+	top: -2rem;
+}
+
+.pp-publish-info .cars-sell,
+.pp-publish-info .use-buy {
+	float: left;
+	width: 50%;
+	height: 4.31rem;
+	text-align: center;
+	font-size: 14px;
+	color: #fff;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.pp-publish-info .cars-sell img,
+.pp-publish-info .use-buy img {
+	display: block;
+	width: 3rem;
+	height: 3rem;
+	margin: 0 auto;
+}
+
+.pp-publish-info .cars-sell span,
+.pp-publish-info .use-buy span {
+	line-height: 40px;
+}
+
+.pp-publish-close {
+	width: 100%;
+	line-height: 1.61rem;
+	text-align: center;
+}
+
+.pp-publish-close a {
+	float: none;
+	display: block;
+	margin: 1.5rem auto;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.pp-publish-close a i {
+	margin-left: -5px;
+	font-size: 20px;
+	color: #fff;
 }
 
 /* reset mui */
