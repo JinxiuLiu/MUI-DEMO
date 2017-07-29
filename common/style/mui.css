@@ -1172,16 +1172,16 @@ input[type='reset'],
 button,
 .mui-btn
 {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
-    line-height: 1.42;
-
+    width: 100%;
+    line-height: 2.2rem;
+	border: none;
     position: relative;
 
     display: inline-block;
 
     margin-bottom: 0;
-    padding: 6px 12px;
 
     cursor: pointer;
     -webkit-transition: all;
@@ -1194,14 +1194,8 @@ button,
     vertical-align: top;
     white-space: nowrap;
 
-    color: #333;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-    border-top-left-radius: 3px;
-    border-top-right-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom-left-radius: 3px;
-    background-color: #fff;
+    color: #fff;
+    background-color: #3998ED;
     background-clip: padding-box;
 }
 input[type='button']:enabled:active, input[type='button'].mui-active:enabled,

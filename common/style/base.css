@@ -102,6 +102,14 @@ input::-webkit-input-placeholder{
     color: #999; opacity:1;
 }
 
+textarea:-ms-input-placeholder{
+    color: #999; opacity:1;
+}
+
+textarea::-webkit-input-placeholder{
+    color: #999; opacity:1;
+}
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
