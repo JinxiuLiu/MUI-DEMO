@@ -5,7 +5,7 @@
 
 
 /* iconfont */
-@import url("//at.alicdn.com/t/font_rba81uax488bbj4i.css");
+@import url("//at.alicdn.com/t/font_ln9ia7t24typhkt9.css");
 
 /* reset */
 p,
@@ -164,6 +164,7 @@ input[type="reset"] {
 /* header-search */
 .pp-bar-search {
 	display: block;
+	padding-left: 15px;
 	position: relative;
 	z-index: 1;
 	-webkit-box-align: center;
@@ -173,7 +174,6 @@ input[type="reset"] {
 	background: rgba(255, 255, 255, .6);
 	color: #333;
 	border-radius: 14px;
-	text-indent: 15px;
 	font-size: 14px;
 }
 

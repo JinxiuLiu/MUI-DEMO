@@ -16,290 +16,321 @@
     <link rel="stylesheet" href="css/list.css" />
 </head>
 <body>
-	<!-- header -->
-	<header class="mui-bar mui-bar-nav">
-	    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-	    <h1 class="mui-title">机源</h1>
-	</header>
-	<!-- fonter -->
-    <footer class="mui-bar mui-bar-tab">
-        <a class="mui-tab-item mui-active" href="/">
-            <span class="mui-icon iconfont icon-zhuye"></span>
-            <span class="mui-tab-label">首页</span>
-        </a>
-        <a class="mui-tab-item" href="list.html">
-            <span class="mui-icon iconfont icon-xiangqing"></span>
-            <span class="mui-tab-label">机源</span>
-        </a>
-        <a class="mui-tab-item" href="/">
-            <span class="mui-icon iconfont icon-jiahao"></span>
-            <span class="mui-tab-label">发布</span>
-        </a>
-        <a class="mui-tab-item" href="/">
-            <span class="mui-icon iconfont icon-wode"></span>
-            <span class="mui-tab-label">我的</span>
-        </a>
-    </footer>
-
-    <div class="mui-content">
-    	<!-- list-search -->
-    	<div class="pp-content">
-    		<a class="pp-bar-search" href="/" title="搜索">
-		    	<i class="iconfont icon-sousuo"></i>
-		    	搜索
-		    </a>
-    	</div>
-    	<div class="mui-segmented-control">
-    	    <a class="mui-control-item mui-active" href="#item1">发货机源</a>
-    	    <a class="mui-control-item" href="#item2">用户机源</a>
-    	</div>
-		<div class="pp-list-select">
-			<div class="pp-content">
-				<a href="#" class="pp-select-item">
-					<span>排序</span>
-					<i class="mui-icon mui-icon-arrowdown"></i>
-				</a>
-				<a href="#" class="pp-select-item">
-					<span class="pp-select-line"></span>
-					<span>类型</span>
-					<i class="mui-icon mui-icon-arrowdown"></i>
-				</a>
-				<a href="#" class="pp-select-item">
-					<span class="pp-select-line"></span>
-					<span>品牌</span>
-					<i class="mui-icon mui-icon-arrowdown"></i>
-				</a>
-				<a href="#" class="pp-select-item">
-					<span class="pp-select-line"></span>
-					<span>地区</span>
-					<i class="mui-icon mui-icon-arrowdown"></i>
-				</a>
-				<a href="#" class="pp-select-item">
-					<span class="pp-select-line"></span>
-					<span>筛选</span>
-					<i class="mui-icon mui-icon-arrowdown"></i>
-				</a>
-			</div>
+	<!-- 侧滑导航根容器 -->
+	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+		<aside class="mui-off-canvas-right">
+		    <div class="mui-scroll-wrapper">
+			    <div class="mui-scroll">
+			        <!-- 菜单具体展示内容 -->
+			        
+			    </div>
+		    </div>
+		</aside>
+		<!-- 主页面容器 -->
+		<div class="mui-inner-wrap">
+			<!-- header -->
+			<header class="mui-bar mui-bar-nav">
+			    <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			    <h1 class="mui-title">机源</h1>
+			</header>
+			<!-- fonter -->
+		    <footer class="mui-bar mui-bar-tab">
+		        <a class="mui-tab-item mui-active" href="/">
+		            <span class="mui-icon iconfont icon-zhuye"></span>
+		            <span class="mui-tab-label">首页</span>
+		        </a>
+		        <a class="mui-tab-item" href="list.html">
+		            <span class="mui-icon iconfont icon-xiangqing"></span>
+		            <span class="mui-tab-label">机源</span>
+		        </a>
+		        <a class="mui-tab-item" href="/">
+		            <span class="mui-icon iconfont icon-jiahao"></span>
+		            <span class="mui-tab-label">发布</span>
+		        </a>
+		        <a class="mui-tab-item" href="/">
+		            <span class="mui-icon iconfont icon-wode"></span>
+		            <span class="mui-tab-label">我的</span>
+		        </a>
+		    </footer>
+		    <div class="mui-content mui-scroll-wrapper">
+		    	<div>
+		    		<!-- list-search -->
+			    	<div class="pp-content">
+			    		<a class="pp-bar-search" href="/" title="搜索">
+					    	<i class="iconfont icon-sousuo"></i>
+					    	 搜索 
+					    	<!-- 搜索结果 -->
+					    	<!--<span class="keywords">
+					    		斗山
+					    		<i class="del-keywords">X</i>
+					    	</span>
+					    	<span class="keywords">
+					    		三一重工
+					    		<i class="del-keywords">X</i>
+					    	</span>-->
+					    </a>
+			    	</div>
+			    	<div class="mui-segmented-control">
+			    	    <a class="mui-control-item mui-active" href="#item1">发货机源</a>
+			    	    <a class="mui-control-item" href="#item2">用户机源</a>
+			    	</div>
+					<div class="pp-list-select">
+						<div class="pp-content">
+							<a href="#" class="pp-select-item">
+								<span>排序</span>
+								<i class="mui-icon mui-icon-arrowdown"></i>
+							</a>
+							<a href="#" class="pp-select-item">
+								<span class="pp-select-line"></span>
+								<span>类型</span>
+								<i class="mui-icon mui-icon-arrowdown"></i>
+							</a>
+							<a href="#" class="pp-select-item">
+								<span class="pp-select-line"></span>
+								<span>品牌</span>
+								<i class="mui-icon mui-icon-arrowdown"></i>
+							</a>
+							<a href="#" class="pp-select-item">
+								<span class="pp-select-line"></span>
+								<span>地区</span>
+								<i class="mui-icon mui-icon-arrowdown"></i>
+							</a>
+							<a href="#" class="pp-select-item">
+								<span class="pp-select-line"></span>
+								<span>筛选</span>
+								<i class="mui-icon mui-icon-arrowdown"></i>
+							</a>
+						</div>
+					</div>
+					<div class="pp-list-info margin-bottom-20">
+						<!-- 搜索结果-找到车源 -->
+						<div class="pp-search-success">以下是为您找到的车源</div>
+						<div class="pp-content">
+				    		<div id="item1" class="mui-control-content mui-active">
+				    			<li class="pp-cars-list">
+				    				<a href="/" class="mui-clearfix pp-cars-item">
+				    					<div class="pp-cars-img">
+				    						<img class="lazy" src="images/cars-img.jpg" alt="" />
+				    					</div>
+				    					<div class="pp-cars-info">
+				    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
+				    						<div class="pp-cars-tag">
+				    							<span>2016年</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>56小时</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span><i class="iconfont icon-zuobiao"></i>6000公里</span>
+				    						</div>
+				    						<div class="pp-cars-bottom">
+												<div class="pp-cars-price">50.00万</div>
+												<div class="pp-cars-time">3小时前更新</div>
+				    						</div>
+				    					</div>
+				    				</a>
+				    			</li>
+				    			<li class="pp-cars-list">
+				    				<a href="/" class="mui-clearfix pp-cars-item">
+				    					<div class="pp-cars-img">
+				    						<img class="lazy" src="images/cars-img.jpg" alt="" />
+				    					</div>
+				    					<div class="pp-cars-info">
+				    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
+				    						<div class="pp-cars-tag">
+				    							<span>2016年</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>56小时</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span><i class="iconfont icon-zuobiao"></i>6000公里</span>
+				    						</div>
+				    						<div class="pp-cars-bottom">
+												<div class="pp-cars-price">50.00万</div>
+												<div class="pp-cars-time">3小时前更新</div>
+				    						</div>
+				    					</div>
+				    				</a>
+				    			</li>
+				    			<li class="pp-cars-list">
+				    				<a href="/" class="mui-clearfix pp-cars-item">
+				    					<div class="pp-cars-img">
+				    						<img class="lazy" src="images/cars-img.jpg" alt="" />
+				    					</div>
+				    					<div class="pp-cars-info">
+				    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
+				    						<div class="pp-cars-tag">
+				    							<span>2016年</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>56小时</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span><i class="iconfont icon-zuobiao"></i>6000公里</span>
+				    						</div>
+				    						<div class="pp-cars-bottom">
+												<div class="pp-cars-price">50.00万</div>
+												<div class="pp-cars-time">3小时前更新</div>
+				    						</div>
+				    					</div>
+				    				</a>
+				    			</li>
+				    			<li class="pp-cars-list">
+				    				<a href="/" class="mui-clearfix pp-cars-item">
+				    					<div class="pp-cars-img">
+				    						<img class="lazy" src="images/cars-img.jpg" alt="" />
+				    					</div>
+				    					<div class="pp-cars-info">
+				    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
+				    						<div class="pp-cars-tag">
+				    							<span>2016年</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>56小时</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span><i class="iconfont icon-zuobiao"></i>6000公里</span>
+				    						</div>
+				    						<div class="pp-cars-bottom">
+												<div class="pp-cars-price">50.00万</div>
+												<div class="pp-cars-time">3小时前更新</div>
+				    						</div>
+				    					</div>
+				    				</a>
+				    			</li>
+				    			<li class="pp-cars-list">
+				    				<a href="/" class="mui-clearfix pp-cars-item">
+				    					<div class="pp-cars-img">
+				    						<img class="lazy" src="images/cars-img.jpg" alt="" />
+				    					</div>
+				    					<div class="pp-cars-info">
+				    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
+				    						<div class="pp-cars-tag">
+				    							<span>2016年</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>56小时</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span><i class="iconfont icon-zuobiao"></i>6000公里</span>
+				    						</div>
+				    						<div class="pp-cars-bottom">
+												<div class="pp-cars-price">50.00万</div>
+												<div class="pp-cars-time">3小时前更新</div>
+				    						</div>
+				    					</div>
+				    				</a>
+				    			</li>
+				    		</div>
+				    		<div id="item2" class="mui-control-content">
+				    			<li class="pp-cars-list">
+				    				<a href="/" class="mui-clearfix pp-cars-item">
+				    					<div class="pp-cars-img">
+				    						<img class="lazy" src="images/cars-img.jpg" alt="" />
+				    					</div>
+				    					<div class="pp-cars-info">
+				    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
+				    						<div class="pp-cars-tag">
+				    							<span>2016年</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>56小时</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>济南</span>
+				    						</div>
+				    						<div class="pp-cars-bottom">
+												<div class="pp-cars-price">50.00万</div>
+												<div class="pp-cars-time">3小时前更新</div>
+				    						</div>
+				    					</div>
+				    				</a>
+				    			</li>
+				    			<li class="pp-cars-list">
+				    				<a href="/" class="mui-clearfix pp-cars-item">
+				    					<div class="pp-cars-img">
+				    						<img class="lazy" src="images/cars-img.jpg" alt="" />
+				    					</div>
+				    					<div class="pp-cars-info">
+				    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
+				    						<div class="pp-cars-tag">
+				    							<span>2016年</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>56小时</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>济南</span>
+				    						</div>
+				    						<div class="pp-cars-bottom">
+												<div class="pp-cars-price">50.00万</div>
+												<div class="pp-cars-time">3小时前更新</div>
+				    						</div>
+				    					</div>
+				    				</a>
+				    			</li>
+				    			<li class="pp-cars-list">
+				    				<a href="/" class="mui-clearfix pp-cars-item">
+				    					<div class="pp-cars-img">
+				    						<img class="lazy" src="images/cars-img.jpg" alt="" />
+				    					</div>
+				    					<div class="pp-cars-info">
+				    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
+				    						<div class="pp-cars-tag">
+				    							<span>2016年</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>56小时</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>济南</span>
+				    						</div>
+				    						<div class="pp-cars-bottom">
+												<div class="pp-cars-price">50.00万</div>
+												<div class="pp-cars-time">3小时前更新</div>
+				    						</div>
+				    					</div>
+				    				</a>
+				    			</li>
+				    			<li class="pp-cars-list">
+				    				<a href="/" class="mui-clearfix pp-cars-item">
+				    					<div class="pp-cars-img">
+				    						<img class="lazy" src="images/cars-img.jpg" alt="" />
+				    					</div>
+				    					<div class="pp-cars-info">
+				    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
+				    						<div class="pp-cars-tag">
+				    							<span>2016年</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>56小时</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>济南</span>
+				    						</div>
+				    						<div class="pp-cars-bottom">
+												<div class="pp-cars-price">50.00万</div>
+												<div class="pp-cars-time">3小时前更新</div>
+				    						</div>
+				    					</div>
+				    				</a>
+				    			</li>
+				    			<li class="pp-cars-list">
+				    				<a href="/" class="mui-clearfix pp-cars-item">
+				    					<div class="pp-cars-img">
+				    						<img class="lazy" src="images/cars-img.jpg" alt="" />
+				    					</div>
+				    					<div class="pp-cars-info">
+				    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
+				    						<div class="pp-cars-tag">
+				    							<span>2016年</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>56小时</span>
+				    							<i class="pp-cars-line">|</i>
+				    							<span>济南</span>
+				    						</div>
+				    						<div class="pp-cars-bottom">
+												<div class="pp-cars-price">50.00万</div>
+												<div class="pp-cars-time">3小时前更新</div>
+				    						</div>
+				    					</div>
+				    				</a>
+				    			</li>
+				    		</div>
+						</div>
+					</div>
+		    	
+		    		<!-- 搜索结果-未符合条件 -->
+		    		<!--<div class="pp-search-err">
+		    			暂无本地机源，您可以<a href="javascript:;">尝试搜索其他机型</a>
+		    		</div>-->
+		    	</div>
+		    </div>
 		</div>
-		<div class="pp-list-info margin-bottom-20">
-			<div class="pp-content">
-	    		<div id="item1" class="mui-control-content mui-active">
-	    			<li class="pp-cars-list">
-	    				<a href="/" class="mui-clearfix pp-cars-item">
-	    					<div class="pp-cars-img">
-	    						<img class="lazy" src="images/cars-img.jpg" alt="" />
-	    					</div>
-	    					<div class="pp-cars-info">
-	    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
-	    						<div class="pp-cars-tag">
-	    							<span>2016年</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>56小时</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span><i class="iconfont icon-zuobiao"></i>6000公里</span>
-	    						</div>
-	    						<div class="pp-cars-bottom">
-									<div class="pp-cars-price">50.00万</div>
-									<div class="pp-cars-time">3小时前更新</div>
-	    						</div>
-	    					</div>
-	    				</a>
-	    			</li>
-	    			<li class="pp-cars-list">
-	    				<a href="/" class="mui-clearfix pp-cars-item">
-	    					<div class="pp-cars-img">
-	    						<img class="lazy" src="images/cars-img.jpg" alt="" />
-	    					</div>
-	    					<div class="pp-cars-info">
-	    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
-	    						<div class="pp-cars-tag">
-	    							<span>2016年</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>56小时</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span><i class="iconfont icon-zuobiao"></i>6000公里</span>
-	    						</div>
-	    						<div class="pp-cars-bottom">
-									<div class="pp-cars-price">50.00万</div>
-									<div class="pp-cars-time">3小时前更新</div>
-	    						</div>
-	    					</div>
-	    				</a>
-	    			</li>
-	    			<li class="pp-cars-list">
-	    				<a href="/" class="mui-clearfix pp-cars-item">
-	    					<div class="pp-cars-img">
-	    						<img class="lazy" src="images/cars-img.jpg" alt="" />
-	    					</div>
-	    					<div class="pp-cars-info">
-	    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
-	    						<div class="pp-cars-tag">
-	    							<span>2016年</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>56小时</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span><i class="iconfont icon-zuobiao"></i>6000公里</span>
-	    						</div>
-	    						<div class="pp-cars-bottom">
-									<div class="pp-cars-price">50.00万</div>
-									<div class="pp-cars-time">3小时前更新</div>
-	    						</div>
-	    					</div>
-	    				</a>
-	    			</li>
-	    			<li class="pp-cars-list">
-	    				<a href="/" class="mui-clearfix pp-cars-item">
-	    					<div class="pp-cars-img">
-	    						<img class="lazy" src="images/cars-img.jpg" alt="" />
-	    					</div>
-	    					<div class="pp-cars-info">
-	    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
-	    						<div class="pp-cars-tag">
-	    							<span>2016年</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>56小时</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span><i class="iconfont icon-zuobiao"></i>6000公里</span>
-	    						</div>
-	    						<div class="pp-cars-bottom">
-									<div class="pp-cars-price">50.00万</div>
-									<div class="pp-cars-time">3小时前更新</div>
-	    						</div>
-	    					</div>
-	    				</a>
-	    			</li>
-	    			<li class="pp-cars-list">
-	    				<a href="/" class="mui-clearfix pp-cars-item">
-	    					<div class="pp-cars-img">
-	    						<img class="lazy" src="images/cars-img.jpg" alt="" />
-	    					</div>
-	    					<div class="pp-cars-info">
-	    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
-	    						<div class="pp-cars-tag">
-	    							<span>2016年</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>56小时</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span><i class="iconfont icon-zuobiao"></i>6000公里</span>
-	    						</div>
-	    						<div class="pp-cars-bottom">
-									<div class="pp-cars-price">50.00万</div>
-									<div class="pp-cars-time">3小时前更新</div>
-	    						</div>
-	    					</div>
-	    				</a>
-	    			</li>
-	    		</div>
-	    		<div id="item2" class="mui-control-content">
-	    			<li class="pp-cars-list">
-	    				<a href="/" class="mui-clearfix pp-cars-item">
-	    					<div class="pp-cars-img">
-	    						<img class="lazy" src="images/cars-img.jpg" alt="" />
-	    					</div>
-	    					<div class="pp-cars-info">
-	    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
-	    						<div class="pp-cars-tag">
-	    							<span>2016年</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>56小时</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>济南</span>
-	    						</div>
-	    						<div class="pp-cars-bottom">
-									<div class="pp-cars-price">50.00万</div>
-									<div class="pp-cars-time">3小时前更新</div>
-	    						</div>
-	    					</div>
-	    				</a>
-	    			</li>
-	    			<li class="pp-cars-list">
-	    				<a href="/" class="mui-clearfix pp-cars-item">
-	    					<div class="pp-cars-img">
-	    						<img class="lazy" src="images/cars-img.jpg" alt="" />
-	    					</div>
-	    					<div class="pp-cars-info">
-	    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
-	    						<div class="pp-cars-tag">
-	    							<span>2016年</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>56小时</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>济南</span>
-	    						</div>
-	    						<div class="pp-cars-bottom">
-									<div class="pp-cars-price">50.00万</div>
-									<div class="pp-cars-time">3小时前更新</div>
-	    						</div>
-	    					</div>
-	    				</a>
-	    			</li>
-	    			<li class="pp-cars-list">
-	    				<a href="/" class="mui-clearfix pp-cars-item">
-	    					<div class="pp-cars-img">
-	    						<img class="lazy" src="images/cars-img.jpg" alt="" />
-	    					</div>
-	    					<div class="pp-cars-info">
-	    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
-	    						<div class="pp-cars-tag">
-	    							<span>2016年</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>56小时</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>济南</span>
-	    						</div>
-	    						<div class="pp-cars-bottom">
-									<div class="pp-cars-price">50.00万</div>
-									<div class="pp-cars-time">3小时前更新</div>
-	    						</div>
-	    					</div>
-	    				</a>
-	    			</li>
-	    			<li class="pp-cars-list">
-	    				<a href="/" class="mui-clearfix pp-cars-item">
-	    					<div class="pp-cars-img">
-	    						<img class="lazy" src="images/cars-img.jpg" alt="" />
-	    					</div>
-	    					<div class="pp-cars-info">
-	    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
-	    						<div class="pp-cars-tag">
-	    							<span>2016年</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>56小时</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>济南</span>
-	    						</div>
-	    						<div class="pp-cars-bottom">
-									<div class="pp-cars-price">50.00万</div>
-									<div class="pp-cars-time">3小时前更新</div>
-	    						</div>
-	    					</div>
-	    				</a>
-	    			</li>
-	    			<li class="pp-cars-list">
-	    				<a href="/" class="mui-clearfix pp-cars-item">
-	    					<div class="pp-cars-img">
-	    						<img class="lazy" src="images/cars-img.jpg" alt="" />
-	    					</div>
-	    					<div class="pp-cars-info">
-	    						<h1 class="pp-cars-title">斗山DH215-9轮式挖掘机</h1>
-	    						<div class="pp-cars-tag">
-	    							<span>2016年</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>56小时</span>
-	    							<i class="pp-cars-line">|</i>
-	    							<span>济南</span>
-	    						</div>
-	    						<div class="pp-cars-bottom">
-									<div class="pp-cars-price">50.00万</div>
-									<div class="pp-cars-time">3小时前更新</div>
-	    						</div>
-	    					</div>
-	    				</a>
-	    			</li>
-	    		</div>
-			</div>
-		</div>
-    </div>
+	</div>
 	
 	<script src="common/script/jquery-2.2.4.min.js"></script>
     <script src="common/script/mui.js"></script>

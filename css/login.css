@@ -52,6 +52,15 @@ input[type='number'] {
 	color: #666;
 }
 
+.pp-login-input .pp-input-box .pp-img-code {
+    display: block;
+    height: 2rem;
+    width: 4.5rem;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
 .pp-login-btn {
 	padding: 0 1rem;
 }

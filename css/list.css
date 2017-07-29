@@ -12,6 +12,26 @@
 	background-color: #fff;
 }
 
+/* 搜索关键词  */
+.pp-bar-search .keywords {
+	display: inline-block;
+	height: 24px;
+	line-height: 25px;
+	padding: 0 6px 0 10px;
+	margin: 3px 0;
+	background: #f7f7f7;
+	border-radius: 20px;
+	text-align: center;
+}
+
+.pp-bar-search .keywords .del-keywords {
+	padding: 0 4px;
+}
+
+.pp-bar-search .keywords:first-child {
+	margin-left: -11px;
+}
+
 /* 选项卡 */
 .mui-segmented-control {
 	border: none;
@@ -91,4 +111,21 @@
 
 .pp-list-info {
 	background-color: #fff;
+}
+
+/* 搜索结果-找到车源 */
+.pp-search-success {
+	width: 100%;
+	line-height: 1.25rem;
+	text-align: center;
+	background: #f3f3f3;
+	font-size: 12px;
+	color: #999;
+}
+
+/* 搜索结果为空 */
+.pp-search-err {
+	text-align: center;
+	padding-top: 40%;
+	font-size: 14px;
 }
