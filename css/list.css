@@ -32,52 +32,6 @@
 	margin-left: -11px;
 }
 
-/* 选项卡 */
-.mui-segmented-control {
-	border: none;
-	background-color: #fafafa;
-	border-radius: inherit;
-	overflow: inherit;
-}
-
-.mui-segmented-control .mui-control-item {
-	height: 2rem;
-	color: #333;
-	border-left: none;
-	overflow: inherit;
-}
-
-.mui-segmented-control .mui-control-item.mui-active {
-	color: #5098e6;
-	background-color: inherit;
-	position: relative;
-}
-
-.mui-segmented-control .mui-control-item.mui-active:after  {
-	display: block;
-    content: '';
-    border-width: 8px 8px 8px 8px;
-    border-style: solid;
-    border-color: transparent transparent #e7e7e7;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    margin-left: -8px;
-}
-
-.mui-segmented-control .mui-control-item.mui-active:before {
-	display: block;
-    content: '';
-    border-width: 7px 7px 7px 7px;
-    border-style: solid;
-    border-color: transparent transparent #fff;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
-    bottom: -1px;
-    margin-left: -7px;
-}
-
 /* 选择排序 */
 .pp-list-select {
 	height: 2rem;

@@ -1239,8 +1239,8 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 .mui-btn-blue.mui-active:enabled
 {
     color: #fff;
-    border: 1px solid #0062cc;
-    background-color: #0062cc;
+    border: 1px solid #3998ED;
+    background-color: #3998ED;
 }
 
 .mui-btn-positive,
@@ -1329,6 +1329,8 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 .mui-btn-outlined
 {
     background-color: transparent;
+    border: 1px solid #3398ed;
+    color: #3398ed;
 }
 .mui-btn-outlined.mui-btn-primary, .mui-btn-outlined.mui-btn-blue
 {
