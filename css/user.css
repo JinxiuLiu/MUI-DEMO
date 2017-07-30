@@ -145,5 +145,11 @@
     
 .pp-user-table {
 	background: #fff;
+	margin-bottom: 2.2rem;
 }
 
+.pp-user-logout {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
