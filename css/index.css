@@ -2,6 +2,18 @@
 /**
  * Created by Liujx on 2017-07-25 14:51:07
  */
+/* 重置选项卡 */
+.mui-segmented-control .mui-control-item.mui-active:before {
+	content: none;
+}
+
+.mui-segmented-control .mui-control-item.mui-active:after {
+	content: none;
+}
+
+.mui-segmented-control {
+	background-color: transparent;
+}
 
 /* 热门品牌and热门机型 */
 .pp-hot-title {

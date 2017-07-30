@@ -8244,3 +8244,5 @@ Function.prototype.bind = Function.prototype.bind || function(to) {
         return buttonApis.length === 1 ? buttonApis[0] : buttonApis;
     };
 })(mui, window, document);
+
+mui('body').on('click','a',function(){document.location.href=this.href;});

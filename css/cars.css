@@ -217,3 +217,30 @@
 .pp-car-footer-bid {
 	background: #5098e6;
 }
+
+/* 重置popur */
+.mui-popup-button.mui-popup-button-bold {
+	color: #CB0033;
+}
+
+.mui-popup-text {
+	text-align: left;
+}
+
+.mui-popup-text p {
+	padding-top: .5rem;
+	line-height: 20px;
+	font-size: 12px;
+}
+
+.mui-popup-text input.pp-popur-input {
+	width: 80%;
+	height: 30px;
+	line-height: 1.25rem;
+	padding: .25rem;
+	margin-top: .5rem;
+	margin-right: .6rem;
+	margin-bottom: 0;
+	font-size: 12px;
+	border: 1px solid #e7e7e7;
+}

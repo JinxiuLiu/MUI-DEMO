@@ -1,6 +1,7 @@
 /**
  * Created by Liujx on 2017-07-25 09:41:22
  */
+
 ;(function(designWidth, maxWidth) {
 	'use strict';
 

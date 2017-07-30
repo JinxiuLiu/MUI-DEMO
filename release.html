@@ -12,6 +12,7 @@
     <title>发布发货机源</title>
     <script type="text/javascript" src="common/script/reset.js"></script>
     <link rel="stylesheet" href="common/style/mui.css"/>
+    <link rel="stylesheet" href="common/style/mui.picker.min.css" />
     <link rel="stylesheet" href="common/style/base.css" />
     <link rel="stylesheet" href="css/release.css" />
 </head>
@@ -135,11 +136,28 @@
 			</div>
     	</div>
     	<div class="pp-release-btn">
-    		<button type="button" class="mui-btn">发布</button>
+    		<button type="button" class="mui-btn" id="release">发布</button>
     	</div>
     </div>
 	
 	<script src="common/script/jquery-2.2.4.min.js"></script>
     <script src="common/script/mui.js"></script>
+    <script src="common/script/mui.picker.min.js"></script>
+    <script>
+    	$(function() {
+    		$('#release').on('click', function() {
+    			var title = '提示',
+	    			message = '发布成功';
+		    	mui.confirm(message, title, ['查看该机源','发布新机源'], function (e) {
+		    		if(e.index == 1) {
+		    			mui.toast('发布新机源',{ duration:'3000ms', type:'div' });
+		    		} else {
+		    			mui.toast('查看该机源',{ duration:'3000ms', type:'div' });
+		    		}
+		    	}, 'div');
+    		});
+			
+    	});
+    </script>
 </body>
 </html>

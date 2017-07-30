@@ -250,7 +250,7 @@
     		// 备注 remark
     		$('#remark').on('click', function() {
     			var title = '备注',
-	    			message = '<div class="pp-popur-remark-top mui-clearfix"><span class="pp-tag-item">重点推广</span><span class="pp-tag-item">A类会员</span></div><div class="pp-popur-remark-bottom mui-clearfix"><span class="pp-tag-item">重点推广</span><span class="pp-tag-item">A类会员</span></div><input class="pp-popur-input" type="text" placeholder="添加自定义备注"/><span id="addRemark">添加</span>';
+	    			message = '<div class="pp-popur-remark-top mui-clearfix"><span class="pp-tag-item">重点推广<i></i></span><span class="pp-tag-item">A类会员<i></i></span></div><div class="pp-popur-remark-bottom mui-clearfix"><span class="pp-tag-item">重点推广</span><span class="pp-tag-item">A类会员</span></div><input class="pp-popur-input" type="text" placeholder="添加自定义备注"/><span id="addRemark">添加</span>';
 		    	mui.confirm(message, title, ['取消','确认'], function (e) {
 		    		if(e.index == 1) {
 		    			mui.toast('备注添加成功',{ duration:'3000ms', type:'div' });

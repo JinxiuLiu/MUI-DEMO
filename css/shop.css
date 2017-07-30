@@ -196,6 +196,20 @@
 	border-bottom: 1px solid #e7e7e7;
 }
 
+.pp-popur-remark-top span {
+	position: relative;
+}
+
+.pp-popur-remark-top span i {
+	position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 16px;
+    height: 16px;
+    background: url(../images/del-img.png) no-repeat;
+    background-size: 100% 100%;
+}
+
 .pp-popur-remark-bottom {
 	padding: .75rem 0 .5rem;
 }
