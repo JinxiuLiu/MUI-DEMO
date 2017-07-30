@@ -1,0 +1,23 @@
+@charset "UTF-8";
+/**
+ * Created by Liujx on 2017-07-30 16:07:49
+ */
+
+.mui-bar-nav {
+	background-color: #5098e6;
+}
+
+.mui-table-view-cell {
+	padding: 0;
+}
+
+.mui-slider-handle {
+	width: 100%;
+    padding: 0.75rem .5rem;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.pp-collect-del {
+	font-size: 16px;
+	background-color: #ED4D3D;
+}
