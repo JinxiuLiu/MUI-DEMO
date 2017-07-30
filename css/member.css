@@ -1,0 +1,69 @@
+@charset "UTF-8";
+/**
+ * Created by Liujx on 2017-07-30 12:48:40
+ */
+.mui-bar-nav {
+	background-color: #5098e6;
+}
+
+.pp-member-portrait {
+	line-height: 3.75rem;
+	padding: 0 1rem;
+	margin: .5rem 0;
+	background: #fff;
+}
+
+.pp-member-portrait .pp-portrait-info img {
+	width: 2.5rem;
+	height: 2.5rem;
+	margin: 0.625rem 0;
+}
+
+.pp-member-portrait .pp-portrait-info span {
+	padding-left: 0.75rem;
+	font-size: 16px;
+}
+
+/* list */
+.pp-member-list {
+	background: #fff;
+}
+
+.pp-member-list .pp-member-item {
+    display: block;
+    line-height: 2.2rem;
+    padding: 0 1rem;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #e7e7e7;	
+}
+
+.pp-member-list .pp-member-item:last-child {
+	border-bottom: none;
+}
+
+.pp-member-list .pp-member-item i {
+	display: inline-block;
+	width: 24px;
+}
+
+.pp-member-list .pp-member-item .pp-member-right {
+	float: right;
+    color: #999;
+    font-size: 14px;
+}
+    
+.pp-member-list .pp-member-item .pp-member-renew {
+	display: inline-block;
+	width: 3.35rem;
+	line-height: 1.425rem;
+	margin-left: 5px;
+	background: #3788e4;
+	font-size: 12px;
+	color: #fff;
+	text-align: center;
+}
+
+.pp-member-list .pp-member-item .pp-recommend {
+	text-decoration: underline;
+}
