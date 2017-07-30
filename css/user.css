@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/**
+ * Created by Liujx on 2017-07-30 12:48:40
+ */
+.mui-bar-nav {
+	background-color: transparent;
+}
+
+/* user-header */
+.pp-user-header {
+	width: 100%;
+	height: 11.25rem;
+	background: url(../images/user-header.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.mui-bar {
+	position: static;	
+}
+
+.pp-user-portrait {
+	margin-top: -.5rem;
+}
+
+.pp-user-portrait .pp-portrait-img {
+	width: 4.625rem;
+	height: 4.625rem;
+	margin: 0 auto;
+}
+
+.pp-user-portrait .pp-portrait-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.pp-user-portrait .pp-portrait-name {
+	width: 100%;
+	padding-top: .5rem;
+	text-align: center;
+	color: #fff;
+}
+
+.pp-user-header .pp-user-header-bottom {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.pp-user-header .pp-user-header-bottom a {
+	display: block;
+	float: left;
+	width: 50%;
+	line-height: 2.2rem;
+	background: rgba(0, 0, 0, .2);
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+
+.pp-user-header .pp-user-header-bottom .line:after {
+	content: ' ';
+	height: 1.25rem;
+    border-left: 1px solid #e7e7e7;
+    position: absolute;
+    top: 0.45rem;
+    right: 0;
+}
+
+/* 最新活动 */
+.pp-latest-activity {
+	line-height: 2.2rem;
+	padding: 0 1rem;
+	background: #fff;
+}
+
+.pp-latest-activity .pp-activity-logo {
+	float: left;
+	width: 22%;
+	height: 1.375rem;
+	margin: 0.4rem 0;
+	background: url(../images/latest-activity.png) no-repeat;
+	background-size: 100% 100%;
+	position: relative;
+}
+
+.pp-latest-activity .pp-activity-logo:after {
+	content: ' ';
+	height: .75rem;
+    border-left: 1px solid #e7e7e7;
+    position: absolute;
+    top: .3rem;
+    right: -.75rem;
+}
+
+.pp-latest-activity .pp-activity-info {
+	float: right;
+	width: 70%;
+	font-size: 14px;
+}
+
+.pp-latest-activity .pp-activity-info a {
+	display: block;
+	color: #333;
+}
+
+.pp-latest-activity .pp-activity-info span {
+	float: left;
+	display: block;
+	max-width: 10.25rem;
+	overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+	
+}
+
+.pp-latest-activity .pp-activity-info i {
+	float: right;
+	color: #999;
+}
+
+.pp-user-release {
+	background: #fff;
+}
+
+.pp-user-item {
+	display: block;
+    line-height: 2.2rem;
+    padding: 0 1rem;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.pp-user-release .pp-user-item {
+	border-bottom: none;
+}
+
+.pp-release-right {
+	float: right;
+    color: #999;
+    font-size: 12px;
+}
+    
+.pp-user-table {
+	background: #fff;
+}
+

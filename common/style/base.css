@@ -5,7 +5,7 @@
 
 
 /* iconfont */
-@import url("//at.alicdn.com/t/font_1lvwfllypz0py14i.css");
+@import url("//at.alicdn.com/t/font_hgudsm28kk68byb9.css");
 
 /* reset */
 p,
@@ -171,6 +171,10 @@ input[type="reset"] {
 
 .border-bottom-1 {
 	border-bottom: 1px solid #e7e7e7;
+}
+
+.colorpp {
+	color: #5098e6;
 }
 
 .color999 {
