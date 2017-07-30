@@ -121,3 +121,26 @@
 	line-height: 1.75rem;
 	font-size: 16px;
 }
+
+/* 下架弹窗 */
+.pp-soldout-popup {
+	background: #f3f3f3;
+}
+
+.pp-soldout-popup .pp-soldout-item {
+	display: block;
+	width: 100%;
+	line-height: 2.2rem;
+	background: #fff;
+	text-align: center;
+	color: #333;
+}
+
+.pp-soldout-popup .pp-soldout-item:first-child {
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.pp-soldout-popup .pp-soldout-close {
+	margin-top: .5rem;
+	color: #C60000;
+}

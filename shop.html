@@ -65,7 +65,7 @@
     				</a>
 	    			<div class="pp-shop-operation mui-clearfix">
 	    				<a href="#" class="pp-operation-item">备注</a>
-	    				<a href="#" class="pp-operation-item">下架</a>
+	    				<a href="#opeSoldOut" class="pp-operation-item">下架</a>
 	    				<a href="#" class="pp-operation-item">刷新</a>
 	    				<a href="#" class="pp-operation-item">置顶</a>
 	    				<a href="#" class="pp-operation-item">调价</a>
@@ -229,6 +229,15 @@
 	    		未上架
 	    	</div>
     	</div>
+    	<!-- 下架弹窗 -->
+    	<div id="opeSoldOut" class="mui-popover mui-popover-bottom mui-popover-action ">
+		    <!-- 菜单 -->
+		    <div class="pp-soldout-popup">
+		    	<a href="#" class="pp-soldout-item">已售出</a>
+		    	<a href="#" class="pp-soldout-item">不想卖了</a>
+		    	<a href="#opeSoldOut" class="pp-soldout-item pp-soldout-close">取消</a>
+		    </div>
+		</div>
     </div>
 	
 	<script src="common/script/jquery-2.2.4.min.js"></script>
