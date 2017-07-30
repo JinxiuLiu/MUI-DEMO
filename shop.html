@@ -64,11 +64,11 @@
     					</div>
     				</a>
 	    			<div class="pp-shop-operation mui-clearfix">
-	    				<a href="#" class="pp-operation-item">备注</a>
+	    				<a href="#" class="pp-operation-item" id="remark">备注</a>
 	    				<a href="#opeSoldOut" class="pp-operation-item">下架</a>
-	    				<a href="#" class="pp-operation-item">刷新</a>
-	    				<a href="#" class="pp-operation-item">置顶</a>
-	    				<a href="#" class="pp-operation-item">调价</a>
+	    				<a href="#" class="pp-operation-item" id="refresh">刷新</a>
+	    				<a href="#" class="pp-operation-item" id="stick">置顶</a>
+	    				<a href="#" class="pp-operation-item" id="adjustment">调价</a>
 	    				<a href="#" class="pp-operation-item">编辑</a>
 	    			</div>
 	    			<div class="pp-shop-tag mui-clearfix">
@@ -235,5 +235,49 @@
 	
 	<script src="common/script/jquery-2.2.4.min.js"></script>
     <script src="common/script/mui.js"></script>
+    <script>
+    	$(function() {
+    		// 刷新 refresh
+    		$('#refresh').on('click', function() {
+    			var title = '请选择刷新类型',
+	    		message = '刷新功能:普通会员每天有1次刷新（每次可刷新一台）机会，理事每天有2次刷新机会，秘书长每天有3次刷新机会，会长副会长每天有4次刷新机会。\n <span class="pp-refresh-popur">您今天刷新次数剩余<em class="colorpp">2</em>次，是否确认刷新？</span>';
+		    	mui.confirm(message, title, ['取消','确认'], function (e) {
+		    		if(e.index == 1) {
+		    			 mui.toast('刷新成功',{ duration:'3000ms', type:'div' });
+		    		}
+		    	}, 'div');
+    		});
+    		// 备注 remark
+    		$('#remark').on('click', function() {
+    			var title = '备注',
+	    			message = '<div class="pp-popur-remark-top mui-clearfix"><span class="pp-tag-item">重点推广</span><span class="pp-tag-item">A类会员</span></div><div class="pp-popur-remark-bottom mui-clearfix"><span class="pp-tag-item">重点推广</span><span class="pp-tag-item">A类会员</span></div><input class="pp-popur-input" type="text" placeholder="添加自定义备注"/><span id="addRemark">添加</span>';
+		    	mui.confirm(message, title, ['取消','确认'], function (e) {
+		    		if(e.index == 1) {
+		    			mui.toast('备注添加成功',{ duration:'3000ms', type:'div' });
+		    		}
+		    	}, 'div');
+    		});
+    		// 置顶 stick
+    		$('#stick').on('click', function() {
+    			var title = '请选择置顶类型',
+	    		message = '<p>置顶规则:普通会员暂不能置顶，理事每个月可以置顶1次单台车源，秘书长每个月可以置顶2次单台车源，会长副会长每个月可以置顶3次单台车源。</p><p>每次置顶时间段为该置顶日期当天<em class="colorpp">0:00 - 24:00</em>，置顶日期请提前预约。</p><p>您本月置顶次数剩余<em class="colorpp">2</em>次，是否确认置顶？</p>';
+		    	mui.confirm(message, title, ['取消','确认'], function (e) {
+		    		if(e.index == 1) {
+		    			mui.toast('置顶成功',{ duration:'3000ms', type:'div' });
+		    		}
+		    	}, 'div');
+    		});
+    		// 调价 adjustment
+    		$('#adjustment').on('click', function() {
+    			var title = '<span class="pp-popur-adjustment">当前：<em class="bold">46万</em></span>',
+	    		message = '<input class="pp-popur-input" type="number" placeholder="请输入调整后价格"/><span>万元</span>';
+		    	mui.confirm(message, title, ['取消','确认'], function (e) {
+		    		if(e.index == 1) {
+		    			mui.toast('调价成功',{ duration:'3000ms', type:'div' });
+		    		}
+		    	}, 'div');
+    		});
+    	});
+    </script>
 </body>
 </html>

@@ -67,3 +67,21 @@
 .pp-member-list .pp-member-item .pp-recommend {
 	text-decoration: underline;
 }
+
+/* 重置-popur */
+.mui-popup-title {
+	line-height: 20px;
+	font-size: 14px;
+	color: #333;
+	text-align: left;
+}
+
+.mui-popup-title + .mui-popup-text {
+	font-size: 14px;
+	color: #999;
+}
+
+.mui-popup-title + .mui-popup-text span {
+	font-size: 16px;
+	color: #333;
+}

@@ -195,9 +195,17 @@
 	            </div>
 	        </li>
     	</div>
+
     </div>
 	
 	<script src="common/script/jquery-2.2.4.min.js"></script>
     <script src="common/script/mui.js"></script>
+    <script>
+    	mui.confirm('188-8888-8888',' ',['取消','拨打'],function (e) {
+    		if(e.index == 1) {
+    			window.location.href = "tel:18888888888";
+    		}
+    	},'div');
+    </script>
 </body>
 </html>

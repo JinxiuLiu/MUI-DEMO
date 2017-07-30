@@ -68,7 +68,7 @@
 	padding-top: .5rem;
 }
 
-.pp-shop-item .pp-shop-tag span {
+.pp-tag-item {
 	display: block;
 	float: left;
 	width: 3rem;
@@ -80,7 +80,7 @@
 	margin-right: 0.875rem;
 }
 
-.pp-shop-item .pp-shop-tag span:last-child {
+.pp-tag-item:last-child {
 	margin-right: 0;
 }
 
@@ -143,4 +143,59 @@
 .pp-soldout-popup .pp-soldout-close {
 	margin-top: .5rem;
 	color: #C60000;
+}
+
+/* 重置popur */
+.mui-popup-title + .mui-popup-text {
+	text-align: left;
+	font-size: 12px;
+}
+
+.mui-popup-text p {
+	padding-bottom: .5rem;
+	font-size: 12px;
+	color: #333;
+}
+
+.mui-popup-text p:last-child {
+	padding-bottom: 0;
+}
+
+.mui-popup-title .pp-popur-adjustment {
+	display: block;
+	text-align: left;
+	font-size: 14px;
+	color: #999;
+}
+
+.mui-popup-title .pp-popur-adjustment .bold {
+	font-size: 16px;
+	color: #333;
+}
+
+.mui-popup-text input.pp-popur-input {
+	width: 80%;
+	height: 30px;
+	line-height: 1.25rem;
+	padding: .25rem;
+	margin-top: .5rem;
+	margin-right: .6rem;
+	margin-bottom: 0;
+	border: 1px solid #e7e7e7;
+}
+
+/* 备注 */
+#addRemark {
+	display: inline-block;
+    width: 15%;
+    line-height: 1.25rem;
+}
+
+.pp-popur-remark-top {
+	padding: .5rem 0 .75rem;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.pp-popur-remark-bottom {
+	padding: .75rem 0 .5rem;
 }

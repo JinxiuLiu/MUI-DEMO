@@ -62,7 +62,7 @@
 				<span class="title">会员有效期</span>
 				<div class="pp-member-right">
 					<span class="colorpp">2018年8月15日</span>
-					<a href="javascript:;" class="pp-member-renew">续费</a>
+					<a href="javascript:;" class="pp-member-renew" id="renew">续费</a>
 				</div>
 			</div>
 			<div href="javascript:;" class="pp-member-item mui-clearfix">
@@ -74,8 +74,20 @@
 			</div>
     	</div>
     </div>
-	
 	<script src="common/script/jquery-2.2.4.min.js"></script>
     <script src="common/script/mui.js"></script>
+    <script>
+    	$(function() {
+    		$('#renew').on('click', function() {
+    			var title = '会员有效期到期后，续费才能继续使用PP二手机平台',
+	    		message = '拨打续费电话：<span>18888888888</span>';
+		    	mui.confirm(message, title, ['取消','拨打'], function (e) {
+		    		if(e.index == 1) {
+		    			window.location.href = "tel:18888888888";
+		    		}
+		    	}, 'div');
+    		});
+    	});
+    </script>
 </body>
 </html>

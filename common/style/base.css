@@ -443,3 +443,13 @@ input[type="reset"] {
 	font-size: 16px;
 	background-color: #ED4D3D;
 }
+
+/* 重置-mui-popur */
+.mui-popup-button.mui-popup-button-bold {
+	font-weight: 400;	
+}
+
+.pp-refresh-popur {
+	display: block;
+	padding: 0.75rem 0 .3rem;
+}

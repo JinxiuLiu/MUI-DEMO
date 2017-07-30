@@ -3942,7 +3942,7 @@ select:focus
     -webkit-transform-origin: 50% 100%;
             transform-origin: 50% 100%;
 
-    background-color: rgba(0, 0, 0, .2);
+    background-color: #e7e7e7;
 }
 
 .mui-popup-title
