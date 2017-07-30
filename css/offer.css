@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/**
+ * Created by Liujx on 2017-07-30 17:22:52
+ */
+.mui-bar-nav {
+	background-color: #5098e6;
+}
+
+.mui-table-view-cell {
+	padding: 11px 15px;
+}
+
+.pp-offer-item {
+	background: #fff;
+}
+
+.pp-offer-cars {
+	width: 100%;
+    padding: 0.75rem .5rem;
+}
+
+/* 重置折叠面板 */
+.mui-table-view-cell.mui-active {
+	background-color: #fff;
+}
+
+.mui-table-view-cell > a:not(.mui-btn).mui-active {
+	background-color: #fff;
+}
