@@ -26,17 +26,18 @@
             var bind = isOn ? this._delegate : this._undelegate;
             for (var keys in maps) {
                 if (maps.hasOwnProperty(keys)) {
+                    console.log(maps[keys]);
                     var matchs = keys.match(delegateEventSplitter);
-                    bind(matchs[1], matchs[2], maps[keys].bind(this));
+                    bind(matchs[1], matchs[2], this[maps[keys]].bind(this));
                 }
             }
         },
         _delegate: function(name, selector, func) {
-            doc.on(name, selector, func);
+            $(doc).on(name, selector, func);
         },
         _undelegate: function(name, selector, func) {
-            doc.off(name, selector, func);
-        },
+            $(doc).off(name, selector, func);
+        }
 	}
 
 	global.indexJs = indexJs;

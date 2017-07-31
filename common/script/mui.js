@@ -8245,4 +8245,9 @@ Function.prototype.bind = Function.prototype.bind || function(to) {
     };
 })(mui, window, document);
 
-mui('body').on('click','a',function(){document.location.href=this.href;});
+mui('body').on('tap', 'a', function(e) { 
+	var hrefStr = this.getAttribute('href');
+	if(hrefStr && hrefStr.substring(0, 1) != '#') {
+		window.location.href = this.href;
+	}
+});

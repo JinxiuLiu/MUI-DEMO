@@ -1251,6 +1251,10 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
     border: 1px solid #4cd964;
     background-color: #4cd964;
 }
+.mui-btn-gray {
+    color: #333;
+    background-color: #eee;
+}
 .mui-btn-positive:enabled:active, .mui-btn-positive.mui-active:enabled,
 .mui-btn-success:enabled:active,
 .mui-btn-success.mui-active:enabled,
@@ -1561,7 +1565,7 @@ input[type='submit']:enabled:active, input[type='submit'].mui-active:enabled,
 {
     font-size: 17px;
     font-weight: 500;
-    line-height: 44px;
+    line-height: 47px;
 
     position: absolute;
 
