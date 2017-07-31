@@ -10,8 +10,10 @@
 	<meta name="keywords" content="">
 	<meta name="description" content="">
     <title>发布发货机源</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
     <script type="text/javascript" src="common/script/reset.js"></script>
     <link rel="stylesheet" href="common/style/mui.css"/>
+    <link rel="stylesheet" href="common/style/mui.indexedlist.css">
     <link rel="stylesheet" href="common/style/mui.picker.min.css" />
     <link rel="stylesheet" href="common/style/base.css" />
     <link rel="stylesheet" href="css/release.css" />
@@ -20,106 +22,21 @@
 	<!-- 主界面不动、菜单移动 -->
 	<!-- 侧滑导航根容器 -->
 	<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
-		<!-- 设备信息 -->
-		<aside class="mui-off-canvas-right" id="openType">
-		    <header class="mui-bar mui-bar-nav">
-			    <a href="#openType" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
-			    <h1 class="mui-title">设备信息</h1>
-			</header>
-			<footer class="mui-bar mui-bar-tab pp-canvas-bottom">
-		        <a href="#openType" class="pp-canvas-close">取消</a>
-		        <a href="javascript:;" class="pp-canvas-confirm">确定</a>
-		    </footer>
-			<div class="mui-content pp-canvas-content" style="height: 9999px">
-				<div class="mui-scroll-wrapper">
-		    		<div class="mui-scroll">
-		        		<ul class="mui-table-view">
-		        		    <li class="mui-table-view-cell mui-collapse">
-		        		        <a class="mui-navigate-right" href="#">挖掘机</a>
-		        		        <div class="mui-collapse-content">
-		        		            <p>不限</p>
-		        		            <p>轮式挖掘机</p>
-		        		            <p>履带式挖掘机</p>
-		        		        </div>
-		        		    </li>
-		        		    <li class="mui-table-view-cell mui-collapse">
-		        		        <a class="mui-navigate-right" href="#">轮式挖掘机</a>
-		        		            <div class="mui-collapse-content">
-		        		            <p>不限</p>
-		        		            <p>轮式挖掘机</p>
-		        		            <p>履带式挖掘机</p>
-		        		        </div>
-		        		    </li>
-		        		    <li class="mui-table-view-cell mui-collapse">
-		        		        <a class="mui-navigate-right" href="#">履带挖掘机</a>
-		        		        <div class="mui-collapse-content">
-		        		            <p>不限</p>
-		        		            <p>轮式挖掘机</p>
-		        		            <p>履带式挖掘机</p>
-		        		        </div>
-		        		    </li>
-		        		    <li class="mui-table-view-cell mui-collapse">
-		        		        <a class="mui-navigate-right" href="#">湿地挖掘机</a>
-		        		        <div class="mui-collapse-content">
-		        		            <p>不限</p>
-		        		            <p>轮式挖掘机</p>
-		        		            <p>履带式挖掘机</p>
-		        		        </div>
-		        		    </li>
-		        		</ul>
-						
-		    		</div>
-		    	</div>
-			</div>
-		</aside>
-		<!-- 不给谁看-选择地区 -->
-		<aside class="mui-off-canvas-right" id="openNoArea">
-		    <header class="mui-bar mui-bar-nav">
-			    <a href="#openNoArea" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
-			    <h1 class="mui-title">选择地区</h1>
-			</header>
-			<footer class="mui-bar mui-bar-tab pp-canvas-bottom">
-		        <a href="#openNoArea" class="pp-canvas-close">取消</a>
-		        <a href="javascript:;" class="pp-canvas-confirm">确定</a>
-		    </footer>
-			<div class="mui-content pp-canvas-content">
-				<div class="mui-scroll-wrapper">
-		    		<div class="mui-scroll">
-			        	<div class="pp-canvas-block">
-							<div class="pp-cancas-block-tip">最多可选择三个省</div>
-							<div class="pp-canvas-block-item mui-clearfix">
-								<a href="javascript:;" class="active">北京</a>
-								<a href="javascript:;">天津</a>
-								<a href="javascript:;">上海</a>
-								<a href="javascript:;">广东</a>
-								<a href="javascript:;">天津</a>
-								<a href="javascript:;">上海</a>
-								<a href="javascript:;">广东</a>
-								<a href="javascript:;">天津</a>
-								<a href="javascript:;">上海</a>
-								<a href="javascript:;">广东</a>
-							</div>
-			        	</div>
-		    		</div>
-		    	</div>
-			</div>
-		</aside>
-		<!-- 选择品牌 -->
-		<aside class="mui-off-canvas-right" id="openBrand">
+		<!-- 设备位置 -->
+		<aside class="mui-off-canvas-right" id="openArea">
 		  	<header class="mui-bar mui-bar-nav" id="brandBar">
-			    <a href="#openBrand" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
-			    <h1 class="mui-title">选择品牌</h1>
+			    <a href="#openArea" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+			    <h1 class="mui-title">上传地区</h1>
 			</header>
 			<footer class="mui-bar mui-bar-tab pp-canvas-bottom" id="footerBar">
-		        <a href="#openBrand" class="pp-canvas-close">取消</a>
+		        <a href="#openArea" class="pp-canvas-close">取消</a>
 		        <a href="javascript:;" class="pp-canvas-confirm">确定</a>
 		    </footer>
 			<div class="mui-content pp-canvas-content">
 	    		<div class="">
 					<div class="mui-indexed-list" id="BrandList">
-		        		<!-- 品牌内容 -->
 		        		<div class="mui-indexed-list-search mui-input-row mui-search" style="display: none;">
-		                    <input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="" data-input-clear="1" data-input-search="1"><span class="mui-icon mui-icon-clear mui-hidden"></span><span class="mui-placeholder"><span class="mui-icon mui-icon-search"></span><span>搜索品牌</span></span>
+		                    <input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="" data-input-clear="1" data-input-search="1"><span class="mui-icon mui-icon-clear mui-hidden"></span><span class="mui-placeholder"><span class="mui-icon mui-icon-search"></span><span>搜索地区</span></span>
 		                </div>
 		                <div class="mui-indexed-list-bar">
 			        		<a>热</a>
@@ -154,71 +71,285 @@
 						<div class="mui-indexed-list-inner pp-canvas-block">
 							<div class="mui-scroll-wrapper" id="brandListScroll" style="padding-top: 0; padding-bottom: 0;">
 								<div class="mui-scroll">
-									<div class="pp-cancas-block-tip" data-group="热">热门品牌</div>
-									<div class="pp-canvas-hotbrand mui-clearfix">
-				    					<a href="/">
-				    						<span>小松</span>
-				    						<img src="images/brand-logo.fw.png" alt="品牌logo">
-				    					</a>
-					    				<a href="/">
-				    						<span>小松</span>
-				    						<img src="images/brand-logo.fw.png" alt="品牌logo">
-				    					</a>
-				    					<a href="/">
-				    						<span>小松</span>
-				    						<img src="images/brand-logo.fw.png" alt="品牌logo">
-				    					</a>
-				    					<a href="/">
-				    						<span>小松</span>
-				    						<img src="images/brand-logo.fw.png" alt="品牌logo">
-				    					</a>
-				    					<a href="/">
-				    						<span>小松</span>
-				    						<img src="images/brand-logo.fw.png" alt="品牌logo">
-				    					</a>
-				    					<a href="/">
-				    						<span>小松</span>
-				    						<img src="images/brand-logo.fw.png" alt="品牌logo">
-				    					</a>
-									</div>
-									<div class="pp-cancas-block-tip" data-group="A">A</div>
-									<div class="pp-canvas-list">
-										<li><a href="#" class="active">阿特拉斯-中国</a></li>
-										<li><a href="#">奥邦</a></li>
-										<li><a href="#">奥力特重工</a></li>
-										<li><a href="#">阿特拉斯科普柯</a></li>
-										<li><a href="#">艾迪</a></li>
-										<li><a href="#">安迈</a></li>
-										<li><a href="#">奥邦</a></li>
-										<li><a href="#">奥驰汽车</a></li>
-						        	</div>
-						        	<div class="pp-cancas-block-tip" data-group="B">B</div>
-									<div class="pp-canvas-list">
-										<li><a href="#" class="active">阿特拉斯-中国</a></li>
-										<li><a href="#">奥邦</a></li>
-										<li><a href="#">奥力特重工</a></li>
-										<li><a href="#">阿特拉斯科普柯</a></li>
-										<li><a href="#">艾迪</a></li>
-										<li><a href="#">安迈</a></li>
-										<li><a href="#">奥邦</a></li>
-										<li><a href="#">奥驰汽车</a></li>
-						        	</div>
-						        	<div class="pp-cancas-block-tip" data-group="C">C</div>
-									<div class="pp-canvas-list">
-										<li><a href="#" class="active">阿特拉斯-中国</a></li>
-										<li><a href="#">奥邦</a></li>
-										<li><a href="#">奥力特重工</a></li>
-										<li><a href="#">阿特拉斯科普柯</a></li>
-										<li><a href="#">艾迪</a></li>
-										<li><a href="#">安迈</a></li>
-										<li><a href="#">奥邦</a></li>
-										<li><a href="#">奥驰汽车</a></li>
+									<div class="pp-canvas-block">
+										<div class="pp-cancas-block-tip" data-group="热">热门区域</div>
+										<div class="pp-canvas-block-item mui-clearfix">
+											<a href="javascript:;" class="active">北京</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+										</div>
+										<div class="pp-cancas-block-tip" data-group="A">A</div>
+										<div class="pp-canvas-block-item mui-clearfix">
+											<a href="javascript:;" class="active">北京</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+										</div>
+										<div class="pp-cancas-block-tip" data-group="B">B</div>
+										<div class="pp-canvas-block-item mui-clearfix">
+											<a href="javascript:;" class="active">北京</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+										</div>
+										<div class="pp-cancas-block-tip" data-group="C">C</div>
+										<div class="pp-canvas-block-item mui-clearfix">
+											<a href="javascript:;" class="active">北京</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+										</div>
+										<div class="pp-cancas-block-tip" data-group="D">D</div>
+										<div class="pp-canvas-block-item mui-clearfix">
+											<a href="javascript:;" class="active">北京</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+											<a href="javascript:;">天津</a>
+											<a href="javascript:;">上海</a>
+											<a href="javascript:;">广东</a>
+										</div>
 						        	</div>
 								</div>
 							</div>
 			        	</div>
 		    		</div>
 	    		</div>
+			</div>
+		</aside>
+		<!-- 设备信息 -->
+		<aside class="mui-off-canvas-right" id="openType">
+		    <div id="one" style="display: none;">
+				<header class="mui-bar mui-bar-nav">
+				    <a href="#openType" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+				    <h1 class="mui-title">设备信息</h1>
+				</header>
+				<footer class="mui-bar mui-bar-tab pp-canvas-bottom">
+			        <a href="#openType" class="pp-canvas-close">取消</a>
+			        <a href="javascript:;" class="pp-canvas-confirm">确定</a>
+			    </footer>
+				<div class="mui-content pp-canvas-content">
+					<div class="mui-scroll-wrapper">
+			    		<div class="mui-scroll">
+			        		<!-- 选择排序 -->
+							<div class="pp-canvas-list">
+								<li><a href="#openBrand" class="active">挖掘机</a></li>
+								<li><a href="#">轮式挖掘机</a></li>
+								<li><a href="#">履带挖掘机</a></li>
+								<li><a href="#">湿地挖掘机</a></li>
+				        	</div>
+			    		</div>
+			    	</div>
+				</div>
+		    </div>
+		    <!-- 设备信息-选择品牌 -->
+		    <div id="two">
+				<header class="mui-bar mui-bar-nav" id="brandBar">
+				    <a href="#openType" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+				    <h1 class="mui-title">选择品牌</h1>
+				</header>
+				<footer class="mui-bar mui-bar-tab pp-canvas-bottom" id="footerBar">
+			        <a href="#openType" class="pp-canvas-close">取消</a>
+			        <a href="javascript:;" class="pp-canvas-confirm">确定</a>
+			    </footer>
+				<div class="mui-content pp-canvas-content">
+		    		<div class="">
+						<div class="mui-indexed-list" id="BrandListTwo">
+			        		<!-- 品牌内容 -->
+			        		<div class="mui-indexed-list-search mui-input-row mui-search" style="display: none;">
+			                    <input type="search" class="mui-input-clear mui-indexed-list-search-input" placeholder="" data-input-clear="1" data-input-search="1"><span class="mui-icon mui-icon-clear mui-hidden"></span><span class="mui-placeholder"><span class="mui-icon mui-icon-search"></span><span>搜索品牌</span></span>
+			                </div>
+			                <div class="mui-indexed-list-bar">
+				        		<a>热</a>
+								<a>A</a>
+								<a>B</a>
+								<a>C</a>
+								<a>D</a>
+								<a>E</a>
+								<a>F</a>
+								<a>G</a>
+								<a>H</a>
+								<a>I</a>
+								<a>J</a>
+								<a>K</a>
+								<a>L</a>
+								<a>M</a>
+								<a>N</a>
+								<a>O</a>
+								<a>P</a>
+								<a>Q</a>
+								<a>R</a>
+								<a>S</a>
+								<a>T</a>
+								<a>U</a>
+								<a>V</a>
+								<a>W</a>
+								<a>X</a>
+								<a>Y</a>
+								<a>Z</a>
+							</div>
+							<div class="mui-indexed-list-alert"></div>
+							<div class="mui-indexed-list-inner pp-canvas-block">
+								<div class="mui-scroll-wrapper" id="brandListScrollTwo" style="padding-top: 0; padding-bottom: 0;">
+									<div class="mui-scroll">
+										<div class="pp-cancas-block-tip" data-group="热">热门品牌</div>
+										<div class="pp-canvas-hotbrand mui-clearfix">
+					    					<a href="/">
+					    						<span>小松</span>
+					    						<img src="images/brand-logo.fw.png" alt="品牌logo">
+					    					</a>
+						    				<a href="/">
+					    						<span>小松</span>
+					    						<img src="images/brand-logo.fw.png" alt="品牌logo">
+					    					</a>
+					    					<a href="/">
+					    						<span>小松</span>
+					    						<img src="images/brand-logo.fw.png" alt="品牌logo">
+					    					</a>
+					    					<a href="/">
+					    						<span>小松</span>
+					    						<img src="images/brand-logo.fw.png" alt="品牌logo">
+					    					</a>
+					    					<a href="/">
+					    						<span>小松</span>
+					    						<img src="images/brand-logo.fw.png" alt="品牌logo">
+					    					</a>
+					    					<a href="/">
+					    						<span>小松</span>
+					    						<img src="images/brand-logo.fw.png" alt="品牌logo">
+					    					</a>
+										</div>
+										<div class="pp-cancas-block-tip" data-group="A">A</div>
+										<div class="pp-canvas-list">
+											<li><a href="#" class="active">阿特拉斯-中国</a></li>
+											<li><a href="#">奥邦</a></li>
+											<li><a href="#">奥力特重工</a></li>
+											<li><a href="#">阿特拉斯科普柯</a></li>
+											<li><a href="#">艾迪</a></li>
+											<li><a href="#">安迈</a></li>
+											<li><a href="#">奥邦</a></li>
+											<li><a href="#">奥驰汽车</a></li>
+							        	</div>
+							        	<div class="pp-cancas-block-tip" data-group="B">B</div>
+										<div class="pp-canvas-list">
+											<li><a href="#" class="active">阿特拉斯-中国</a></li>
+											<li><a href="#">奥邦</a></li>
+											<li><a href="#">奥力特重工</a></li>
+											<li><a href="#">阿特拉斯科普柯</a></li>
+											<li><a href="#">艾迪</a></li>
+											<li><a href="#">安迈</a></li>
+											<li><a href="#">奥邦</a></li>
+											<li><a href="#">奥驰汽车</a></li>
+							        	</div>
+							        	<div class="pp-cancas-block-tip" data-group="C">C</div>
+										<div class="pp-canvas-list">
+											<li><a href="#" class="active">阿特拉斯-中国</a></li>
+											<li><a href="#">奥邦</a></li>
+											<li><a href="#">奥力特重工</a></li>
+											<li><a href="#">阿特拉斯科普柯</a></li>
+											<li><a href="#">艾迪</a></li>
+											<li><a href="#">安迈</a></li>
+											<li><a href="#">奥邦</a></li>
+											<li><a href="#">奥驰汽车</a></li>
+							        	</div>
+									</div>
+								</div>
+				        	</div>
+			    		</div>
+		    		</div>
+				</div>
+		    </div>
+		    <!-- 设备信息-选择型号 -->
+		    <div id="three" style="display: none;">
+				<header class="mui-bar mui-bar-nav">
+				    <a href="#openType" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+				    <h1 class="mui-title">选择型号</h1>
+				</header>
+				<footer class="mui-bar mui-bar-tab pp-canvas-bottom">
+			        <a href="#openType" class="pp-canvas-close">取消</a>
+			        <a href="javascript:;" class="pp-canvas-confirm">确定</a>
+			    </footer>
+				<div class="mui-content pp-canvas-content">
+					<div class="mui-scroll-wrapper">
+			    		<div class="mui-scroll">
+							<div class="pp-canvas-list">
+								<li><a href="#openBrand" class="active">DL505</a></li>
+								<li><a href="#">DL305</a></li>
+								<li><a href="#">DL303</a></li>
+								<li><a href="#">DL303</a></li>
+								<li><a href="#">DL305</a></li>
+								<li><a href="#">DL303</a></li>
+								<li><a href="#">DL303</a></li>
+								<li><a href="#">DL305</a></li>
+								<li><a href="#">DL303</a></li>
+								<li><a href="#">DL303</a></li>
+								<li><a href="#">DL305</a></li>
+								<li><a href="#">DL303</a></li>
+								<li><a href="#">DL303</a></li>
+				        	</div>
+			    		</div>
+			    	</div>
+				</div>
+		    </div>
+		</aside>
+		<!-- 不给谁看-选择地区 -->
+		<aside class="mui-off-canvas-right" id="openNoArea">
+		    <header class="mui-bar mui-bar-nav">
+			    <a href="#openNoArea" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+			    <h1 class="mui-title">选择地区</h1>
+			</header>
+			<footer class="mui-bar mui-bar-tab pp-canvas-bottom">
+		        <a href="#openNoArea" class="pp-canvas-close">取消</a>
+		        <a href="javascript:;" class="pp-canvas-confirm">确定</a>
+		    </footer>
+			<div class="mui-content pp-canvas-content">
+				<div class="mui-scroll-wrapper">
+		    		<div class="mui-scroll">
+			        	<div class="pp-canvas-block">
+							<div class="pp-cancas-block-tip">最多可选择三个省</div>
+							<div class="pp-canvas-block-item mui-clearfix">
+								<a href="javascript:;" class="active">北京</a>
+								<a href="javascript:;">天津</a>
+								<a href="javascript:;">上海</a>
+								<a href="javascript:;">广东</a>
+								<a href="javascript:;">天津</a>
+								<a href="javascript:;">上海</a>
+								<a href="javascript:;">广东</a>
+								<a href="javascript:;">天津</a>
+								<a href="javascript:;">上海</a>
+								<a href="javascript:;">广东</a>
+							</div>
+			        	</div>
+		    		</div>
+		    	</div>
 			</div>
 		</aside>
 		<!-- 主页面容器 -->
@@ -265,7 +396,7 @@
 			    			<i class="line"></i>基本信息
 			    		</div>
 			    		<div class="pp-basic-item">
-							<a href="#" class="pp-select-box border-none mui-clearfix">
+							<a href="#openArea" class="pp-select-box border-none mui-clearfix">
 								<span class="title">设备位置</span>
 								<div class="pp-select-right">
 									<span>请选择</span>
@@ -280,7 +411,7 @@
 									<i class="iconfont icon-you"></i>
 								</div>
 							</a>
-							<a href="#" class="pp-select-box mui-clearfix">
+							<a href="javascript:;" class="pp-select-box mui-clearfix" id="factoryYear">
 								<span class="title">出厂年限</span>
 								<div class="pp-select-right">
 									<span>请选择</span>
@@ -352,7 +483,23 @@
 	
 	<script src="common/script/jquery-2.2.4.min.js"></script>
     <script src="common/script/mui.js"></script>
+    <script src="common/script/mui.indexedlist.js"></script>
     <script src="common/script/mui.picker.min.js"></script>
     <script src="js/release.js"></script>
+    <script>
+        mui.init();
+        mui.ready(function() {
+        	var header = document.getElementById('brandBar');
+            var footer = document.getElementById('footerBar');
+            var list = document.getElementById('BrandList');
+            var listTwo = document.getElementById('BrandListTwo');
+            //calc hieght
+            list.style.height = (document.body.offsetHeight - header.offsetHeight - footer.offsetHeight) + 'px';
+            listTwo.style.height = (document.body.offsetHeight - header.offsetHeight - footer.offsetHeight) + 'px';
+            //create
+            window.indexedList = new mui.IndexedList(list);
+            window.indexedList = new mui.IndexedList(listTwo);
+        });
+    </script>
 </body>
 </html>

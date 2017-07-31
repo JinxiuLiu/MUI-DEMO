@@ -66,6 +66,7 @@
 			if (!groupElement || (self.hiddenGroups && self.hiddenGroups.indexOf(groupElement) > -1)) {
 				return;
 			}
+			$('#brandListScrollTwo').scroll().scrollTo(0, -groupElement.offsetTop);
 			$('#brandListScroll').scroll().scrollTo(0, -groupElement.offsetTop);
 			// self.el.inner.scrollTop = groupElement.offsetTop;
 		},

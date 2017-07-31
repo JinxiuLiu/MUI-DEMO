@@ -201,3 +201,60 @@
 	background: #3998ED;
 	color: #fff;
 }
+
+/* 重置日期选择器 */
+.mui-dtpicker-header {
+	line-height: 2.2rem;
+	padding: 0;
+	background: #fff;
+	border-bottom: 1px solid #e7e7e7;
+	color: #333;
+	font-size: 16px;
+    text-align: center;
+}
+
+.mui-dtpicker-header button {
+	width: 20%;
+	padding: 0;
+	font-size: 14px;
+	background: #fff;
+	color: #999;
+	border: none;
+}
+
+[data-id=btn-cancel] {
+	float: left;
+}
+
+[data-id=btn-ok] {
+	float: right;
+}
+
+.mui-picker {
+	background-color: #fff;
+}
+
+.mui-pciker-rule-ft {
+	border-top: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+}
+
+.mui-dtpicker-header button.mui-btn-blue {
+	color: #4F97E5;
+}
+
+[data-type=month] .mui-dtpicker-title h5,
+[data-type=month] .mui-picker,
+[data-type=time] .mui-dtpicker-title h5,
+[data-type=time] .mui-picker {
+	width: 100%;
+}
+
+[data-type=time] .mui-dtpicker-title h5,
+[data-type=month] .mui-dtpicker-title h5 {
+	display: none;
+}
+
+[data-id=picker-m] {
+	display: none;
+}

@@ -10,13 +10,26 @@
 			
 		}
 		this.eventsMap = {
-			"click #release": "clickReleaseBtn"
+			"tap #release": "clickReleaseBtn",
+			"tap #factoryYear": "selectDate"
 		}
 		this.initialization();
 	}
 
 	releaseJs.prototype = {
 		constructor: releaseJs,
+		selectDate: function() {
+			console.log(22);
+			// 日期选择
+            var dtPicker = new mui.DtPicker({
+            	"type": "month",
+            	beginDate: new Date('2000-1'),//设置开始日期 
+    			endDate: new Date(),//设置结束日期 
+            });
+		    dtPicker.show(function (selectItems) { 
+		        console.log(selectItems.y);//{text: "2016",value: 2016} 
+		    })
+		},
 		clickReleaseBtn: function() {
 			var title = '提示',
     			message = '发布成功';
