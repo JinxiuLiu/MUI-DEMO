@@ -83,9 +83,3 @@
 	padding-top: 40%;
 	font-size: 14px;
 }
-
-/* 重置侧滑 */
-.mui-off-canvas-left,
-.mui-off-canvas-right {
-	background: #fff;
-}

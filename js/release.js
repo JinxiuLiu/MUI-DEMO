@@ -1,22 +1,33 @@
 /**
- * Created by Liujx on 2017-07-26 21:33:10
+ * Created by Liujx on 2017-07-31 17:22:01
  */
 (function(global, $, mui, doc) {
 	'use strict';
 	
-	var listJs = function() {
+	var releaseJs = function() {
 		mui.init();
 		this.config = {
 			
 		}
 		this.eventsMap = {
-			
+			"click #release": "clickReleaseBtn"
 		}
 		this.initialization();
 	}
 
-	listJs.prototype = {
-		constructor: listJs,
+	releaseJs.prototype = {
+		constructor: releaseJs,
+		clickReleaseBtn: function() {
+			var title = '提示',
+    			message = '发布成功';
+	    	mui.confirm(message, title, ['查看该机源','发布新机源'], function (e) {
+	    		if(e.index == 1) {
+	    			mui.toast('发布新机源',{ duration:'3000ms', type:'div' });
+	    		} else {
+	    			mui.toast('查看该机源',{ duration:'3000ms', type:'div' });
+	    		}
+	    	}, 'div');
+		},
 		forbidOffCanvas: function() {
 			var offCanvasInner = mui('.mui-off-canvas-wrap')[0].querySelector('.mui-inner-wrap');
 			offCanvasInner.addEventListener('drag', function(event) {
@@ -52,11 +63,10 @@
         }
 	}
 
-	global.listJs = listJs;
+	global.releaseJs = releaseJs;
 
     $(function() {
-        new listJs();
+        new releaseJs();
     });
 
 })(this, this.jQuery, this.mui, document);
-    

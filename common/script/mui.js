@@ -8247,7 +8247,7 @@ Function.prototype.bind = Function.prototype.bind || function(to) {
 
 mui('body').on('tap', 'a', function(e) { 
 	var hrefStr = this.getAttribute('href');
-	if(hrefStr && hrefStr.substring(0, 1) != '#') {
+	if(hrefStr && hrefStr.substring(0, 1) != '#' && hrefStr !== 'javascript:;') {
 		window.location.href = this.href;
 	}
 });

@@ -457,6 +457,7 @@ input[type="reset"] {
 .mui-off-canvas-left,
 .mui-off-canvas-right {
 	width: 90%;
+	background: #fff; 
 }
 
 .pp-canvas-bottom {
@@ -492,10 +493,6 @@ input[type="reset"] {
 }
 
 /* 侧滑-列表 */
-.pp-canvas-list {
-	
-}
-
 .pp-canvas-list li a {
 	display: block;
 	line-height: 2.2rem;
@@ -647,3 +644,5 @@ input[type="reset"] {
 .mui-indexed-list-inner .pp-canvas-list li a.active:after {
 	right: 24px;
 }
+
+/* 侧滑END */
