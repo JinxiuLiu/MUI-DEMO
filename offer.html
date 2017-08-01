@@ -100,7 +100,7 @@
 		                		<span>他的出价：40万</span>
 		                	</div>
 		                	<div class="pp-offer-tel">
-		                		<a href="#" class="dial">
+		                		<a href="javascript:;" class="dial" id="call">
 		                			<i class="iconfont icon-phone"></i>
 		                			<span>拨打电话</span>
 		                		</a>
@@ -201,12 +201,6 @@
 	
 	<script src="common/script/jquery-2.2.4.min.js"></script>
     <script src="common/script/mui.js"></script>
-    <script>
-    	mui.confirm('188-8888-8888',' ',['取消','拨打'],function (e) {
-    		if(e.index == 1) {
-    			window.location.href = "tel:18888888888";
-    		}
-    	},'div');
-    </script>
+    <script src="js/offer.js"></script>
 </body>
 </html>

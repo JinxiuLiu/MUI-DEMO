@@ -31,7 +31,8 @@
 
 .pp-member-list .pp-member-item {
     display: block;
-    line-height: 2.2rem;
+    height: 2.2rem;
+    line-height: 2.225rem;
     padding: 0 1rem;
     font-size: 16px;
     color: #333;
@@ -56,6 +57,7 @@
 .pp-member-list .pp-member-item .pp-member-renew {
 	display: inline-block;
 	width: 3.35rem;
+	height: 1.325rem;
 	line-height: 1.425rem;
 	margin-left: 5px;
 	background: #3788e4;

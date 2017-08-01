@@ -239,7 +239,7 @@
     <script>
     	$(function() {
     		// 刷新 refresh
-    		$('#refresh').on('click', function() {
+    		$('#refresh').on('tap', function() {
     			var title = '请选择刷新类型',
 	    		message = '刷新功能:普通会员每天有1次刷新（每次可刷新一台）机会，理事每天有2次刷新机会，秘书长每天有3次刷新机会，会长副会长每天有4次刷新机会。\n <span class="pp-refresh-popur">您今天刷新次数剩余<em class="colorpp">2</em>次，是否确认刷新？</span>';
 		    	mui.confirm(message, title, ['取消','确认'], function (e) {
@@ -249,7 +249,7 @@
 		    	}, 'div');
     		});
     		// 备注 remark
-    		$('#remark').on('click', function() {
+    		$('#remark').on('tap', function() {
     			var title = '备注',
 	    			message = '<div class="pp-popur-remark-top mui-clearfix"><span class="pp-tag-item">重点推广<i></i></span><span class="pp-tag-item">A类会员<i></i></span></div><div class="pp-popur-remark-bottom mui-clearfix"><span class="pp-tag-item">重点推广</span><span class="pp-tag-item">A类会员</span></div><input class="pp-popur-input" type="text" placeholder="添加自定义备注"/><span id="addRemark">添加</span>';
 		    	mui.confirm(message, title, ['取消','确认'], function (e) {
@@ -259,7 +259,7 @@
 		    	}, 'div');
     		});
     		// 置顶 stick
-    		$('#stick').on('click', function() {
+    		$('#stick').on('tap', function() {
     			var title = '请选择置顶类型',
 	    		message = '<p>置顶规则:普通会员暂不能置顶，理事每个月可以置顶1次单台车源，秘书长每个月可以置顶2次单台车源，会长副会长每个月可以置顶3次单台车源。</p><p>每次置顶时间段为该置顶日期当天<em class="colorpp">0:00 - 24:00</em>，置顶日期请提前预约。</p><p>您本月置顶次数剩余<em class="colorpp">2</em>次，是否确认置顶？</p>';
 		    	mui.confirm(message, title, ['取消','确认'], function (e) {
@@ -269,7 +269,7 @@
 		    	}, 'div');
     		});
     		// 调价 adjustment
-    		$('#adjustment').on('click', function() {
+    		$('#adjustment').on('tap', function() {
     			var title = '<span class="pp-popur-adjustment">当前：<em class="bold">46万</em></span>',
 	    		message = '<input class="pp-popur-input" type="number" placeholder="请输入调整后价格"/><span>万元</span>';
 		    	mui.confirm(message, title, ['取消','确认'], function (e) {

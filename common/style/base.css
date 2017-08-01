@@ -152,6 +152,11 @@ input[type="reset"] {
 	-webkit-appearance: none;
 }
 
+.clear{
+	overflow:hidden;
+	zoom:1;
+}
+
 .fl {
 	float: left;
 }
@@ -372,6 +377,7 @@ input[type="reset"] {
 	float: left;
 	width: 6.25rem;
 	height: 4.8rem;
+	position: relative;
 }
 
 .pp-cars-item .pp-cars-img img {
