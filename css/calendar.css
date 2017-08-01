@@ -1,4 +1,8 @@
-/*初始化*/
+@charset "UTF-8";
+/**
+ * Created by Liujx on 2017-08-01 16:49:46
+ */
+
 .mui-bar-nav {
 	background-color: #5098e6;
 }
@@ -28,13 +32,14 @@
 	color: #333;
 }
 
-.calendar-container{
-	width:100%;
+.calendar-container {
+	width: 100%;
 }
 
 .calendar-title {
-	width:100%; 
+	width: 100%;
 	line-height: 1.5rem;
+	padding: 0 .5rem;
 	border-bottom: 1px solid #e7e7e7;
 }
 
@@ -53,75 +58,77 @@
 }
 
 .calendar-reserve {
-	float:right;
-	width:20%;
+	float: right;
+	width: 20%;
 	line-height: 1.5rem;
-	text-align:center;
+	text-align: center;
 	font-size: 12px;
 	position: relative;
 }
 
 .calendar-reserve:before {
-    display: block;
-    content: '';
-    border-width: 5px;
-    border-style: solid;
-    border-color: #EF7D31;
-    border-radius: 50%;
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    margin-top: -5px;
+	display: block;
+	content: '';
+	border-width: 5px;
+	border-style: solid;
+	border-color: #EF7D31;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 5px;
+	margin-top: -5px;
 }
 
-.calendar-week{
-	width:100%;
-	height:45px;
+.calendar-week {
+	width: 100%;
+	height: 40px;
+	padding: 0 .5rem;
 }
 
-.calendar-week div{
-	float: left; 
-	width: 14.28%; 
-	height: 45px; 
-	color: #999; 
-	text-align: center; 
-	line-height: 45px; 
+.calendar-week div {
+	float: left;
+	width: 14.28%;
+	height: 40px;
+	color: #999;
+	text-align: center;
+	line-height: 45px;
 	cursor: pointer;
 }
 
-.calendar-content{
-	width:100%;
+.calendar-content {
+	width: 100%;
+	padding: 0 .5rem;
 }
 
-.calendar-content div{
-	float: left; 
-	width: 14.28%; 
+.calendar-content div {
+	float: left;
+	width: 14.28%;
 	height: 40px;
-	color: #333; 
+	color: #333;
 	cursor: pointer;
 }
 
 .calendar-content div span {
 	width: 30px;
-    height: 30px;
+	height: 30px;
 	line-height: 30px;
-    display: block;
-    margin: 5px auto;
-	text-align: center; 
-    border-radius: 15px;
+	display: block;
+	margin: 5px auto;
+	text-align: center;
+	border-radius: 15px;
 }
 
-.calendar-content .canChoose:hover span{
+.calendar-content .canChoose:hover span {
 	color: #fff;
 	background-color: #5098e6;
 }
 
 .calendar-content div.today span {
-	color:#fff;
+	color: #fff;
 	background-color: #5098e6;
 }
 
 .calendar-content div.reserve span {
-	color:#fff;
+	color: #fff;
 	background-color: #EF7D31;
 }
