@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="common/style/mui.picker.min.css" />
     <link rel="stylesheet" href="common/style/base.css" />
     <link rel="stylesheet" href="css/release.css" />
+    <link rel="stylesheet" href="common/style/previewimage.css">
 </head>
 <body>
 	<!-- 主界面不动、菜单移动 -->
@@ -218,7 +219,7 @@
 							</div>
 							<div class="mui-indexed-list-alert"></div>
 							<div class="mui-indexed-list-inner pp-canvas-block">
-								<div class="mui-scroll-wrapper" id="brandListScrollTwo" style="padding-top: 0; padding-bottom: 0;">
+								<div class="mui-scroll-wrapper brandListScrollTwo" style="padding-top: 0; padding-bottom: 0;">
 									<div class="mui-scroll">
 										<div class="pp-cancas-block-tip" data-group="热">热门品牌</div>
 										<div class="pp-canvas-hotbrand mui-clearfix">
@@ -372,20 +373,20 @@
 			    			</div>
 			    			<div class="pp-img-upload mui-clearfix">
 			    				<div class="pp-show-img">
-			    					<img src="images/uoload-img.png" alt="" />
+			    					<img src="images/uoload-img.png" alt=""  data-preview-src="" data-preview-group="1"/>
 			    				</div>
 			    				<div class="pp-show-img">
-			    					<img src="images/uoload-img.png" alt="" />
+			    					<img src="images/uoload-img.png" alt=""  data-preview-src="" data-preview-group="1"/>
 			    					<div class="pp-del-img"></div>
 			    				</div>
 			    				<div class="pp-show-img">
-			    					<img src="images/uoload-img.png" alt="" />
+			    					<img src="images/uoload-img.png" alt=""  data-preview-src="" data-preview-group="1"/>
 			    				</div>
 			    				<div class="pp-show-img">
-			    					<img src="images/uoload-img.png" alt="" />
+			    					<img src="images/uoload-img.png" alt=""  data-preview-src="" data-preview-group="1"/>
 			    				</div>
 			    				<div class="pp-show-img">
-			    					<img src="images/uoload-img.png" alt="" />
+			    					<img src="images/uoload-img.png" alt=""  data-preview-src="" data-preview-group="1"/>
 			    				</div>
 			    			</div>
 			    		</div>
@@ -418,20 +419,20 @@
 									<i class="iconfont icon-you"></i>
 								</div>
 							</a>
-							<a href="#" class="pp-select-box mui-clearfix">
+							<div href="#" class="pp-select-box mui-clearfix">
 								<span class="title">使用小时数</span>
 								<div class="pp-select-right">
 									<span class="unit">小时</span>
 									<input type="number"  placeholder="请输入小时数"/>
 								</div>
-							</a>
-							<a href="#" class="pp-select-box mui-clearfix">
+							</div>
+							<div href="#" class="pp-select-box mui-clearfix">
 								<span class="title">价格</span>
 								<div class="pp-select-right">
 									<span class="unit">万元</span>
 									<input type="number" placeholder="请输入您的价格"/>
 								</div>
-							</a>
+							</div>
 							<div class="pp-select-tag">
 								<span class="pp-tag-item active">合格证</span>
 								<span class="pp-tag-item">发票</span>
@@ -483,6 +484,8 @@
 	
 	<script src="common/script/jquery-2.2.4.min.js"></script>
     <script src="common/script/mui.js"></script>
+    <script src="common/script/mui.zoom.js"></script>
+    <script src="common/script/mui.previewimage.js"></script>
     <script src="common/script/mui.indexedlist.js"></script>
     <script src="common/script/mui.picker.min.js"></script>
     <script src="js/release.js"></script>

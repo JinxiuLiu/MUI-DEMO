@@ -7,7 +7,7 @@
  * Houfeng@DCloud.io
  **/
 
-(function($, window, document) {
+(function($, window, document, jq) {
 
 	var classSelector = function(name) {
 		return '.' + $.className(name);
@@ -66,8 +66,11 @@
 			if (!groupElement || (self.hiddenGroups && self.hiddenGroups.indexOf(groupElement) > -1)) {
 				return;
 			}
-			$('#brandListScrollTwo').scroll().scrollTo(0, -groupElement.offsetTop);
+
 			$('#brandListScroll').scroll().scrollTo(0, -groupElement.offsetTop);
+			if(jq('.mui-scroll-wrapper').hasClass('brandListScrollTwo')) {
+				$('.brandListScrollTwo').scroll().scrollTo(0, -groupElement.offsetTop);
+			}
 			// self.el.inner.scrollTop = groupElement.offsetTop;
 		},
 		bindBarEvent: function() {
@@ -186,4 +189,4 @@
 		return this[0] ? this[0].indexedList : null;
 	};
 
-})(mui, window, document);
+})(mui, window, document, jQuery);

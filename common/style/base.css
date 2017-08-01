@@ -185,6 +185,12 @@ input[type="reset"] {
 	background-color: #5098e6;
 }
 
+/* 重置-header-icon */
+.mui-bar-nav .mui-action-back {
+	font-size: 30px;
+	padding-top: 7px;
+}
+
 /* header-search */
 .pp-bar-search {
 	display: block;

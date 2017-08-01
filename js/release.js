@@ -6,6 +6,7 @@
 	
 	var releaseJs = function() {
 		mui.init();
+        mui.previewImage();
 		this.config = {
 			
 		}

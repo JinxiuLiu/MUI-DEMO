@@ -1,44 +1,50 @@
 @charset "UTF-8";
+
 /**
  * Created by Liujx on 2017-07-26 21:46:37
  */
+
 .mui-bar-nav {
 	background-color: #5098e6;
 }
 
 .mui-slider .mui-slider-group .mui-slider-item img {
-    height: 9.375rem;
+	height: 9.375rem;
 }
 
+
 /* slider */
+
 .pp-cars-number {
 	position: absolute;
-    bottom: 0.5rem;
-    left: 0.5rem;
+	bottom: 0.5rem;
+	left: 0.5rem;
 }
 
 .pp-cars-number .pp-number-box {
 	font-size: 10px;
 	height: 0.8rem;
-    line-height: 0.9rem;
-    background: rgba(0, 0, 0, .3);
-    color: #fff;
-    display: block;
-    text-align: center;
-    padding: 0 0.25rem;
-    z-index: 999;
-    vertical-align: middle;
+	line-height: 0.9rem;
+	background: rgba(0, 0, 0, .3);
+	color: #fff;
+	display: block;
+	text-align: center;
+	padding: 0 0.25rem;
+	z-index: 999;
+	vertical-align: middle;
 }
 
 .pp-cars-imgnum {
 	position: absolute;
-    bottom: 0.5rem;
-    right: 0.5rem;
-    color: #fff;
-    font-size: 12px;
+	bottom: 0.5rem;
+	right: 0.5rem;
+	color: #fff;
+	font-size: 12px;
 }
 
+
 /* car-title */
+
 .pp-car-title {
 	padding: 0.5rem;
 	background-color: #fff;
@@ -85,7 +91,9 @@
 	font-size: 12px;
 }
 
+
 /* 基本信息 */
+
 .pp-car-basic,
 .pp-car-describe {
 	background-color: #fff;
@@ -100,7 +108,7 @@
 }
 
 .pp-car-basic .pp-basic-title .line,
-.pp-car-describe .pp-describe-title .line{
+.pp-car-describe .pp-describe-title .line {
 	display: inline-block;
 	height: 14px;
 	width: 2px;
@@ -124,8 +132,8 @@
 	font-size: 14px;
 	color: #999;
 	overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 
 .pp-car-basic .pp-basic-info li span:last-child {
@@ -133,7 +141,9 @@
 	font-weight: 500;
 }
 
+
 /* 设备描述 */
+
 .pp-car-describe .pp-describe-title {
 	border-bottom: none;
 }
@@ -152,16 +162,18 @@
 
 .pp-car-describe .pp-describe-report .report-btn {
 	display: block;
-    width: 160px;
-    line-height: 1.5rem;
-    margin: 0 auto;
-    border: 1px solid #5098e6;
-    color: #5098e6;
-    font-size: 12px;
-    text-align: center;
+	width: 160px;
+	line-height: 1.5rem;
+	margin: 0 auto;
+	border: 1px solid #5098e6;
+	color: #5098e6;
+	font-size: 12px;
+	text-align: center;
 }
 
+
 /* footer */
+
 .mui-bar-tab {
 	border-top: none;
 }
@@ -181,26 +193,26 @@
 .pp-car-footer-collect i {
 	position: relative;
 	top: 5px;
-    width: 24px;
-    height: 24px;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-size: 20px;
+	width: 24px;
+	height: 24px;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-size: 20px;
 }
 
 .pp-car-footer-share span,
 .pp-car-footer-collect span {
 	font-size: 12px;
-    padding-top: 7px;
-    display: block;
+	padding-top: 7px;
+	display: block;
 }
 
 .pp-car-footer-collect:before {
 	display: block;
-    content: '';
-    height: 50px;
-    position: absolute;
-    border-left: 1px solid #d9d9d9;
+	content: '';
+	height: 50px;
+	position: absolute;
+	border-left: 1px solid #d9d9d9;
 }
 
 .pp-car-footer-contact,
@@ -218,7 +230,9 @@
 	background: #5098e6;
 }
 
+
 /* 重置popur */
+
 .mui-popup-button.mui-popup-button-bold {
 	color: #CB0033;
 }

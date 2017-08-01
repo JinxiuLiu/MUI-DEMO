@@ -23,13 +23,19 @@
 }
 
 .pp-login-input input {
-	line-height: 2.2rem;
+	height: 44px;
+	line-height: 45px;
+	padding: 0 10px;
 	border-radius: inherit;
 	border: none;
 	margin-bottom: 0;
 	text-indent: 1.15rem;
 	border: 1px solid #e7e7e7;
-	font-size: 16px;
+	font-size: 14px;
+}
+
+.pp-last-input {
+	border-bottom: 1px solid #e7e7e7 !important;
 }
 
 input[type='number'] {
@@ -47,14 +53,14 @@ input[type='number'] {
 	position: absolute;
 	top: 50%;
 	left: 0.6rem;
-	margin-top: -10px;
+	margin-top: -12px;
 	font-size: 18px;
 	color: #666;
 }
 
 .pp-login-input .pp-input-box .pp-img-code {
     display: block;
-    height: 2rem;
+    height: 44px;
     width: 4.5rem;
     position: absolute;
     top: 1px;
@@ -67,7 +73,8 @@ input[type='number'] {
 
 .pp-login-btn .mui-btn {
 	width: 100%;
-	height: 2rem;
+	height: 44px;
+	line-height: 44px;
 	border: none;
 	border-radius: inherit;
 	background: #5098e6;
@@ -92,8 +99,21 @@ input[type='number'] {
     position: absolute;
     top: 0;
     right: 0.5rem;
-    margin-top: 7px;
+    margin-top: 10px;
     border: 1px solid #e7e7e7;
     font-size: 12px;
 	text-align: center;
+}
+
+.pp-login-about {
+	padding: .5rem 1rem;
+	font-size: 12px;
+}
+
+.pp-login-about .about {
+	float: left;
+}
+
+.pp-login-about .join {
+	float: right;
 }
