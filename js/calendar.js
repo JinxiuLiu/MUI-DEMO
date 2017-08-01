@@ -85,7 +85,7 @@
 			var subContent = document.createElement("div");
 			subContent.className= "canChoose";
 			// today之前
-			if(i > nowDay) {
+			if(i < nowDay) {
 				subContent.classList.add("before");
 			}
 			// 当天
