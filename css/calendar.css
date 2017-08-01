@@ -118,6 +118,10 @@
 	border-radius: 15px;
 }
 
+.calendar-content div.before {
+	color: #999;
+}
+
 .calendar-content .canChoose:hover span {
 	color: #fff;
 	background-color: #5098e6;

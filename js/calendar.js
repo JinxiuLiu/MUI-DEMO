@@ -84,12 +84,17 @@
 		for(var i = 1; i <= monDaynum; i++){
 			var subContent = document.createElement("div");
 			subContent.className= "canChoose";
+			// today之前
+			if(i > nowDay) {
+				subContent.classList.add("before");
+			}
+			// 当天
 			if(i == nowDay){
 				subContent.classList.add("today");
 			}
 			subContent.innerHTML = '<span>' + i + '</span>';
 			el.appendChild(subContent);
-
+			// 已预订
 			for(var j = 0; j < reservedNum.length; j++) {
 				if(i == reservedNum[j]) {
 					subContent.classList.add("reserve");
