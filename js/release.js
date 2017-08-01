@@ -6,7 +6,9 @@
 	
 	var releaseJs = function() {
 		mui.init();
-        mui.previewImage();
+        mui.previewImage({
+            footer: '设为封面'
+        });
 		this.config = {
 			
 		}

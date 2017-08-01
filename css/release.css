@@ -258,3 +258,13 @@
 [data-id=picker-m] {
 	display: none;
 }
+
+/* reset-图片预览 */
+.mui-preview-image.mui-fullscreen {
+	background-color: #f3f3f3;
+}
+
+.mui-preview-footer {
+	text-align: center;
+	color: #5098e6;
+}
