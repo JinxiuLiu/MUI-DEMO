@@ -14,12 +14,7 @@
     <script type="text/javascript" src="common/script/reset.js"></script>
     <link rel="stylesheet" href="common/style/mui.css"/>
     <link rel="stylesheet" href="common/style/base.css" />
-    <style>
-    	.mui-bar-nav {
-			background-color: #5098e6;
-		}
-		
-    </style>
+    <link rel="stylesheet" href="css/calendar.css">
 </head>
 <body>
 	<!-- header -->
@@ -29,10 +24,25 @@
 	</header>
 	
     <div class="mui-content">
+    	<div class="pp-calendar-content">
+    		<div class="pp-calendar-title">请选择置顶日期</div>
+			<div id="calendar"></div>
+			<div class="pp-calendar-tip"><i>温馨提示：</i>该置顶有效期为当天0:00至24:00，平台每天可预定置顶条数为10条</div>
+    	</div>
     	
     </div>
 	
 	<script src="common/script/jquery-2.2.4.min.js"></script>
     <script src="common/script/mui.js"></script>
+    <script src="js/calendar.js"></script>
+    <script type="text/javascript">
+        var cld = new Calendar({
+            el: '#calendar',
+            value: '', // 默认为new Date();
+            callback: function(obj) {
+                console.log(JSON.stringify(obj));
+            }
+        });
+    </script>
 </body>
 </html>
