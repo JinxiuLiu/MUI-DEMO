@@ -4,7 +4,7 @@
 (function(global, $, mui, doc) {
 	'use strict';
 	
-	var releaseJs = function() {
+	var offerJs = function() {
 		mui.init();
 		this.config = {
 			
@@ -15,8 +15,8 @@
 		this.initialization();
 	}
 
-	releaseJs.prototype = {
-		constructor: releaseJs,
+	offerJs.prototype = {
+		constructor: offerJs,
 		markingCalls: function() {
 			mui.confirm('188-8888-8888',' ',['取消','拨打'],function (e) {
 	    		if(e.index == 1) {
@@ -45,10 +45,10 @@
         }
 	}
 
-	global.releaseJs = releaseJs;
+	global.offerJs = offerJs;
 
     $(function() {
-        new releaseJs();
+        new offerJs();
     });
 
 })(this, this.jQuery, this.mui, document);

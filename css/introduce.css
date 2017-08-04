@@ -1,0 +1,164 @@
+@charset "UTF-8";
+/**
+ * Created by Liujx on 2017-08-03 17:47:39
+ */
+html,
+body {
+	background-color: #fff;
+}
+
+.mui-bar-nav {
+	background-color: #5098e6;
+}
+
+.mui-content {
+	padding: 0 1rem;
+	background-color: #fff;
+}
+
+.pp-introduce-iswho {
+	width: 100%;
+	padding: 0 .75rem;
+	margin-top: .5rem;
+	border-radius: 8px;
+	-webkit-box-shadow:0 0 8px #6aa9e5;
+    -moz-box-shadow:0 0 8px #6aa9e5;
+    box-shadow:0 0 8px #6aa9e5;
+	background-color: #6aa9e5;
+	color: #fff;
+}
+
+.pp-introduce-iswho .pp-iswho-title {
+	line-height: 2.5rem;
+	border-bottom: 1px solid #65a7e1;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+}
+
+.pp-iswho-text {
+	padding: .5rem 0 .75rem;
+	border-top: 1px solid #7db7e6;
+}
+
+.pp-iswho-text p {
+	line-height: 20px;
+	font-size: 12px;
+	color: #fff;
+}
+
+.pp-introduce-item {
+	padding-top: .75rem;
+}
+
+.pp-introduce-item .pp-introduce-logo {
+	width: 54px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.logo-1 {
+	background: url(../images/waji-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.logo-2 {
+	background: url(../images/waji-2.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.logo-3 {
+	background: url(../images/waji-3.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.logo-4 {
+	background: url(../images/waji-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.logo-5 {
+	background: url(../images/waji-5.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.logo-6 {
+	background: url(../images/waji-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.logo-7 {
+	background: url(../images/waji-7.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.logo-8 {
+	background: url(../images/waji-8.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.logo-9 {
+	background: url(../images/waji-9.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.logo-10 {
+	background: url(../images/waji-1.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.pp-introduce-item .pp-introduce-box {
+	width: 100%;
+	padding: 1.65rem .75rem .5rem;
+	margin-top: 1.25rem;
+	border: 1px solid #5098e6;
+	border-radius: 8px;
+	position: relative;
+}
+
+.pp-introduce-item .pp-introduce-box .pp-introducebox-title {
+	width: 13.025rem;
+	height: 1.925rem;
+	line-height: 1.6rem;
+	background: url(../images/introduce-title-img.png) no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: -1.1rem;
+	left: 50%;
+	margin-left: -6.5rem;
+	font-size: .6rem;
+	color: #fff;
+	text-align: center;
+}
+
+.pp-introduce-item .pp-introduce-box .pp-introducebox-img {
+	width: 100%;
+	height: auto;
+}
+
+.pp-introduce-item .pp-introduce-box .pp-introducebox-img img {
+	width: 100%;
+	height: 100%;
+}
+
+.pp-introduce-item .pp-introduce-box .pp-introducebox-text {
+	padding-top: .5rem;
+}
+
+.pp-introduce-item .pp-introduce-box .pp-introducebox-text.padding-top-none {
+	padding-top: 0;
+}
+
+.pp-introduce-item .pp-introduce-box .pp-introducebox-text p {
+	line-height: 20px;
+	font-size: 14px;
+	color: #333;
+}
+
+.pp-introduce-tip {
+	line-height: 20px;
+	padding-top: .75rem;
+	font-size: 10px;
+	color: #5b95e7;
+	text-align: center;
+}

@@ -5,6 +5,13 @@
 	'use strict';
 	
 	var indexJs = function() {
+        mui.init();
+        this.config = {
+            
+        }
+        this.eventsMap = {
+            
+        }
 		this.initialization();
 	}
 
@@ -14,7 +21,7 @@
 			//获得slider插件对象
 			var gallery = mui('.mui-slider');
 			gallery.slider({
-			  interval: 5000//自动轮播周期，若为0则不自动播放，默认为0；
+			  interval: 5000 //自动轮播周期，若为0则不自动播放，默认为0;
 			});
 		},
 		initialization: function() {	// 初始化
@@ -26,7 +33,6 @@
             var bind = isOn ? this._delegate : this._undelegate;
             for (var keys in maps) {
                 if (maps.hasOwnProperty(keys)) {
-                    console.log(maps[keys]);
                     var matchs = keys.match(delegateEventSplitter);
                     bind(matchs[1], matchs[2], this[maps[keys]].bind(this));
                 }

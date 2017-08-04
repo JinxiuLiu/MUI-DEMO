@@ -22,7 +22,6 @@
 	releaseJs.prototype = {
 		constructor: releaseJs,
 		selectDate: function() {
-			console.log(22);
 			// 日期选择
             var dtPicker = new mui.DtPicker({
             	"type": "month",

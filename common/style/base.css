@@ -179,7 +179,7 @@ input[type="reset"] {
 }
 
 .colorpp {
-	color: #3788e4;
+	color: #3788e4 !important;
 }
 
 .color999 {
