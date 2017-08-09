@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no,email=no">
+		<meta http-equiv="x-rim-auto-match" content="none">
+		<meta name="applicable-device" content="mobile">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<title>收购信息</title>
+		<link rel="shortcut icon" href="favicon.ico">
+		<script type="text/javascript" src="common/script/reset.js"></script>
+		<link rel="stylesheet" href="common/style/mui.css" />
+		<link rel="stylesheet" href="common/style/base.css" />
+		<style type="text/css">
+			.mui-bar-nav {
+				background-color: #5098e6;
+			}
+			
+			.pp-buyinfo-area,
+			.pp-buyinfo-type {
+				margin-top: .5rem;
+				background: #fff;
+			}
+			
+			.pp-buyinfo-title {
+				display: block;
+				line-height: 2.2rem;
+				padding: 0 1rem;
+				font-size: 16px;
+				color: #333;
+				border-bottom: 1px solid #e7e7e7;
+			}
+			
+			.pp-buyinfo-title a {
+				color: #666;
+			}
+			
+			.pp-buyinfo-item {
+				padding: .3rem 1rem;
+				font-size: 12px;
+				color: #5098e6;
+			}
+			
+			.pp-buyinfo-item span {
+				display: block;
+				float: left;
+				line-height: 20px;
+				padding: 0 .3rem;
+				margin: .2rem .5rem .2rem 0;
+				border: 1px solid #5098e6;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 主界面不动、菜单移动 -->
+		<!-- 侧滑导航根容器 -->
+		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+			<!-- 选择地区 -->
+			<aside class="mui-off-canvas-right" id="openArea">
+			    <header class="mui-bar mui-bar-nav">
+				    <a href="#openArea" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+				    <h1 class="mui-title">选择地区</h1>
+				</header>
+				<footer class="mui-bar mui-bar-tab pp-canvas-bottom">
+			        <a href="#openArea" class="pp-canvas-close">取消</a>
+			        <a href="javascript:;" class="pp-canvas-confirm">确定</a>
+			    </footer>
+				<div class="mui-content pp-canvas-content">
+					<div class="mui-scroll-wrapper">
+			    		<div class="mui-scroll">
+				        	<!-- 选择地区 -->
+				        	<div class="pp-canvas-block">
+								<div class="pp-cancas-block-tip">最多可选择三个省</div>
+								<div class="pp-canvas-block-item mui-clearfix">
+									<a href="javascript:;" class="active">北京</a>
+									<a href="javascript:;">天津</a>
+									<a href="javascript:;">上海</a>
+									<a href="javascript:;">广东</a>
+									<a href="javascript:;">天津</a>
+									<a href="javascript:;">上海</a>
+									<a href="javascript:;">广东</a>
+									<a href="javascript:;">天津</a>
+									<a href="javascript:;">上海</a>
+									<a href="javascript:;">广东</a>
+								</div>
+				        	</div>
+			    		</div>
+			    	</div>
+				</div>
+			</aside>
+			<!-- 选择类型 -->
+			<aside class="mui-off-canvas-right" id="openType">
+			    <header class="mui-bar mui-bar-nav">
+				    <a href="#openType" class="mui-icon mui-icon-left-nav mui-pull-left"></a>
+				    <h1 class="mui-title">设备类型</h1>
+				</header>
+				<footer class="mui-bar mui-bar-tab pp-canvas-bottom">
+			        <a href="#openType" class="pp-canvas-close">取消</a>
+			        <a href="javascript:;" class="pp-canvas-confirm">确定</a>
+			    </footer>
+				<div class="mui-content pp-canvas-content" style="height: 9999px">
+					<div class="mui-scroll-wrapper">
+			    		<div class="mui-scroll">
+			        	<!-- 选择类型 -->
+			        		<ul class="mui-table-view">
+			        		    <li class="mui-table-view-cell mui-collapse">
+			        		        <a class="mui-navigate-right" href="#">挖掘机</a>
+			        		        <div class="mui-collapse-content">
+			        		            <p>不限</p>
+			        		            <p>轮式挖掘机</p>
+			        		            <p>履带式挖掘机</p>
+			        		        </div>
+			        		    </li>
+			        		    <li class="mui-table-view-cell mui-collapse">
+			        		        <a class="mui-navigate-right" href="#">轮式挖掘机</a>
+			        		            <div class="mui-collapse-content">
+			        		            <p>不限</p>
+			        		            <p>轮式挖掘机</p>
+			        		            <p>履带式挖掘机</p>
+			        		        </div>
+			        		    </li>
+			        		    <li class="mui-table-view-cell mui-collapse">
+			        		        <a class="mui-navigate-right" href="#">履带挖掘机</a>
+			        		        <div class="mui-collapse-content">
+			        		            <p>不限</p>
+			        		            <p>轮式挖掘机</p>
+			        		            <p>履带式挖掘机</p>
+			        		        </div>
+			        		    </li>
+			        		    <li class="mui-table-view-cell mui-collapse">
+			        		        <a class="mui-navigate-right" href="#">湿地挖掘机</a>
+			        		        <div class="mui-collapse-content">
+			        		            <p>不限</p>
+			        		            <p>轮式挖掘机</p>
+			        		            <p>履带式挖掘机</p>
+			        		        </div>
+			        		    </li>
+			        		</ul>
+							
+			    		</div>
+			    	</div>
+				</div>
+			</aside>
+			<!-- 主页面容器 -->
+			<div class="mui-inner-wrap">
+				<!-- header -->
+				<header class="mui-bar mui-bar-nav">
+					<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+					<h1 class="mui-title">收购信息</h1>
+				</header>
+		
+				<div class="mui-content">
+					<div class="pp-buyinfo-area">
+						<div class="pp-buyinfo-title mui-clearfix">
+							<span>收车区域</span>
+							<a href="#openArea" class="fr">
+								<span>添加</span>
+								<i class="iconfont icon-you"></i>
+							</a>
+						</div>
+						<div class="pp-buyinfo-item mui-clearfix">
+							<span>北京<i class="iconfont icon-close47"></i></span>
+							<span>上海<i class="iconfont icon-close47"></i></span>
+							<span>广东<i class="iconfont icon-close47"></i></span>
+							<span>深圳<i class="iconfont icon-close47"></i></span>
+						</div>
+					</div>
+					<div class="pp-buyinfo-type">
+						<div class="pp-buyinfo-title mui-clearfix">
+							<span>收购车系</span>
+							<a href="#openType" class="fr">
+								<span>添加</span>
+								<i class="iconfont icon-you"></i>
+							</a>
+						</div>
+						<div class="pp-buyinfo-item mui-clearfix">
+							<span>碧浪 插秧机<i class="iconfont icon-close47"></i></span>
+							<span>碧浪 插秧机<i class="iconfont icon-close47"></i></span>
+							<span>碧浪 插秧机<i class="iconfont icon-close47"></i></span>
+							<span>碧浪 插秧机<i class="iconfont icon-close47"></i></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="common/script/jquery-2.2.4.min.js"></script>
+		<script src="common/script/mui.js"></script>
+	</body>
+
+</html>
