@@ -40,19 +40,50 @@
 		// 当前日期
 		var nowDay = getDay(dateObj);
 		//初始化显示本月信息
-		setContent(content, fistWeek, monDaynum, nowDay, [5, 10, 20]);
+		var reservedNum = [];
+		$.ajax({
+            url: SITE_URL+'/apiu/?a=getStickDateList',
+            type: 'POST',
+            async: false,
+            data: {
+            	year: year,
+            	month: month,
+            	pid: GetQueryString('pid')
+            },
+            dataType:"json",
+            success: function(data){
+                if(data.result == 'ok') {
+                	$('#topNum').html(data.data.top_num);
+                    reservedNum = data.data.list;
+                } else {
+                	mui.toast(data.data.msg, { duration:'3000ms', type:'div' });
+                }
+            }
+        });
+		
+		setContent(content, fistWeek, monDaynum, nowDay, reservedNum);
 		
 		var isSupportMUI = (typeof mui === 'function');
 		var evt = {
-			type: isSupportMUI?'tap':'click'
+			type: isSupportMUI ? 'tap': 'click'
 		}
 		// 显示当前时间
-		content.addEventListener(evt.type,function (event) {
-		    if(event.target.tagName=="DIV" && event.target.nodeType=="1" && hasclass(event.target.className,"canChoose")){
-				var day = event.target.innerHTML;
+		content.addEventListener(evt.type, function (event) {
+			if(hasclass(event.target.className,"reserve") || $(event.target).parent().hasClass('reserve')) return false;
+		    if(hasclass(event.target.className,"today") || hasclass(event.target.className,"later") || $(event.target).parent().hasClass('today') || $(event.target).parent().hasClass('later')){
+				var day;
+				if(event.target.tagName === 'DIV') {
+					day = event.target.firstChild.innerHTML;
+				} else {
+					day = event.target.innerHTML;
+				}
+				if(day < 10){
+		            day = '0' + day;  //补齐
+		        }
 				var dateObj = new Date(year, month-1, day);
 				var week = getWeek(dateObj);
 				opt.callback({
+					'over_time': year + '-' + month+ '-' + day,
 					'year': year,
 					'month': month,
 					'day': day,
@@ -64,7 +95,7 @@
 	
 	//有无指定类名的判断
 	function hasclass(str,cla){
-	  	var i=str.search(cla);
+	  	var i = str.search(cla);
 	  	if(i==-1){
 	   		return false;
 	  	}else{
@@ -92,7 +123,10 @@
 			if(i == nowDay){
 				subContent.classList.add("today");
 			}
-			subContent.innerHTML = '<span>' + i + '</span>';
+			if(i > nowDay) {
+				subContent.classList.add("later");
+			}
+			subContent.innerHTML = '<span>'+i+'</span>';
 			el.appendChild(subContent);
 			// 已预订
 			for(var j = 0; j < reservedNum.length; j++) {
@@ -201,6 +235,12 @@
 		}
 	}
 	
+	function GetQueryString(name) {
+	    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	    var r = window.location.search.substr(1).match(reg);
+	    if(r!=null)return  unescape(r[2]); return null;
+	}
+	
 	// 获取本月1号的周值
 	function getCurmonWeeknum(dateObj){
 		var oneyear = new Date();
@@ -212,3 +252,45 @@
 		return oneyear.getDay();  
 	}
 })(window);
+
+
+$(function() {
+	var cld = new Calendar({
+	    el: '#calendar',
+	    value: '', // 默认为new Date();
+	    callback: function(obj) {
+	    	var $stickContent = $('#stick_content'),
+	    		content = $stickContent.attr('data-content'),
+	    		my = $stickContent.attr('data-my'),
+	    		message = '<p>'+content+'</p><p>每次置顶时间段为该置顶日期当天<em class="colorpp">0:00 - 24:00</em>，置顶日期请提前预约。</p><p>'+my+'</p>';
+	    		title = $stickContent.attr('data-title');
+	        mui.confirm(message, title, ['取消','确认'], function (e) {
+			    if(e.index == 1) {
+			    	$.ajax({
+			            url: SITE_URL+'/apiu/?a=carTop',
+			            type: 'POST',
+			            data: {
+			                pid: GetQueryString('pid'),
+			                over_time: obj.over_time
+			            },
+			            dataType:"json",
+			            success: function(data){
+			                if(data.result == 'ok') {
+			                	window.history.back();
+			                	mui.toast('置顶成功', { duration:'3000ms', type:'div' });
+			                    mui.closePopup();
+			                } else {
+			                	mui.toast(data.data.msg, { duration:'3000ms', type:'div' });
+			                }
+			            }
+			        });
+			    }
+			}, 'div');
+	    }
+	});
+	function GetQueryString(name) {
+	    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+	    var r = window.location.search.substr(1).match(reg);
+	    if(r!=null)return  unescape(r[2]); return null;
+	}
+});
